@@ -16,6 +16,7 @@
 		3A01396F211C46A1003F8ACF /* informationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A01396E211C46A1003F8ACF /* informationVC.swift */; };
 		3A013974211C4DE9003F8ACF /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A013973211C4DE9003F8ACF /* File.swift */; };
 		3A0139C8211CC713003F8ACF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0139C7211CC713003F8ACF /* Main.storyboard */; };
+		3A0DD15322529DB3009CB423 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3A0DD15222529DB3009CB423 /* README.md */; };
 		3A59A13421318B6500509741 /* planetIntroductionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A59A13321318B6500509741 /* planetIntroductionVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		3A01396E211C46A1003F8ACF /* informationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = informationVC.swift; sourceTree = "<group>"; };
 		3A013973211C4DE9003F8ACF /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		3A0139C7211CC713003F8ACF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3A0DD15222529DB3009CB423 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3A59A13321318B6500509741 /* planetIntroductionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planetIntroductionVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -50,6 +52,7 @@
 			children = (
 				3A013954211BA3EC003F8ACF /* Planets */,
 				3A013953211BA3EC003F8ACF /* Products */,
+				3A0DD15222529DB3009CB423 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,6 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A0DD15322529DB3009CB423 /* README.md in Resources */,
 				3A01396A211C4563003F8ACF /* Earth.jpg in Resources */,
 				3A0139C8211CC713003F8ACF /* Main.storyboard in Resources */,
 				3A013960211BA3EE003F8ACF /* LaunchScreen.storyboard in Resources */,
