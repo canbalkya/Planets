@@ -11,13 +11,15 @@
 		3A013958211BA3ED003F8ACF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A013957211BA3ED003F8ACF /* ViewController.swift */; };
 		3A01395D211BA3EE003F8ACF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A01395C211BA3EE003F8ACF /* Assets.xcassets */; };
 		3A013960211BA3EE003F8ACF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A01395E211BA3EE003F8ACF /* LaunchScreen.storyboard */; };
-		3A01396A211C4563003F8ACF /* Earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A013969211C4563003F8ACF /* Earth.jpg */; };
+		3A01396A211C4563003F8ACF /* World.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A013969211C4563003F8ACF /* World.jpg */; };
 		3A01396C211C4567003F8ACF /* Mars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A01396B211C4567003F8ACF /* Mars.jpg */; };
 		3A01396F211C46A1003F8ACF /* informationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A01396E211C46A1003F8ACF /* informationVC.swift */; };
 		3A013974211C4DE9003F8ACF /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A013973211C4DE9003F8ACF /* File.swift */; };
 		3A0139C8211CC713003F8ACF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A0139C7211CC713003F8ACF /* Main.storyboard */; };
 		3A0DD15322529DB3009CB423 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3A0DD15222529DB3009CB423 /* README.md */; };
-		3A59A13421318B6500509741 /* planetIntroductionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A59A13321318B6500509741 /* planetIntroductionVC.swift */; };
+		3A59A13421318B6500509741 /* IntroductionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A59A13321318B6500509741 /* IntroductionVC.swift */; };
+		3A766CF9226F8BC4001D549D /* WorldText in Resources */ = {isa = PBXBuildFile; fileRef = 3A766CF8226F8BC4001D549D /* WorldText */; };
+		3A766CFB226F8C05001D549D /* MarsText in Resources */ = {isa = PBXBuildFile; fileRef = 3A766CFA226F8C05001D549D /* MarsText */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,13 +29,15 @@
 		3A01395C211BA3EE003F8ACF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A01395F211BA3EE003F8ACF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A013961211BA3EE003F8ACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A013969211C4563003F8ACF /* Earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Earth.jpg; sourceTree = "<group>"; };
+		3A013969211C4563003F8ACF /* World.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = World.jpg; sourceTree = "<group>"; };
 		3A01396B211C4567003F8ACF /* Mars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mars.jpg; sourceTree = "<group>"; };
 		3A01396E211C46A1003F8ACF /* informationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = informationVC.swift; sourceTree = "<group>"; };
 		3A013973211C4DE9003F8ACF /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		3A0139C7211CC713003F8ACF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3A0DD15222529DB3009CB423 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		3A59A13321318B6500509741 /* planetIntroductionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planetIntroductionVC.swift; sourceTree = "<group>"; };
+		3A59A13321318B6500509741 /* IntroductionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionVC.swift; sourceTree = "<group>"; };
+		3A766CF8226F8BC4001D549D /* WorldText */ = {isa = PBXFileReference; lastKnownFileType = text; path = WorldText; sourceTree = "<group>"; };
+		3A766CFA226F8C05001D549D /* MarsText */ = {isa = PBXFileReference; lastKnownFileType = text; path = MarsText; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,10 +71,10 @@
 		3A013954211BA3EC003F8ACF /* Planets */ = {
 			isa = PBXGroup;
 			children = (
-				3A01396D211C456E003F8ACF /* İmages */,
+				3A766CF6226F8B8F001D549D /* Sources */,
 				3A013955211BA3EC003F8ACF /* AppDelegate.swift */,
 				3A013957211BA3ED003F8ACF /* ViewController.swift */,
-				3A59A13321318B6500509741 /* planetIntroductionVC.swift */,
+				3A59A13321318B6500509741 /* IntroductionVC.swift */,
 				3A01396E211C46A1003F8ACF /* informationVC.swift */,
 				3A013973211C4DE9003F8ACF /* File.swift */,
 				3A0139C7211CC713003F8ACF /* Main.storyboard */,
@@ -84,11 +88,29 @@
 		3A01396D211C456E003F8ACF /* İmages */ = {
 			isa = PBXGroup;
 			children = (
-				3A013969211C4563003F8ACF /* Earth.jpg */,
+				3A013969211C4563003F8ACF /* World.jpg */,
 				3A01396B211C4567003F8ACF /* Mars.jpg */,
 			);
 			name = "İmages";
 			path = "İmages";
+			sourceTree = "<group>";
+		};
+		3A766CF6226F8B8F001D549D /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				3A766CF7226F8BA4001D549D /* Texts */,
+				3A01396D211C456E003F8ACF /* İmages */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		3A766CF7226F8BA4001D549D /* Texts */ = {
+			isa = PBXGroup;
+			children = (
+				3A766CF8226F8BC4001D549D /* WorldText */,
+				3A766CFA226F8C05001D549D /* MarsText */,
+			);
+			path = Texts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,12 +171,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A766CFB226F8C05001D549D /* MarsText in Resources */,
 				3A0DD15322529DB3009CB423 /* README.md in Resources */,
-				3A01396A211C4563003F8ACF /* Earth.jpg in Resources */,
+				3A01396A211C4563003F8ACF /* World.jpg in Resources */,
 				3A0139C8211CC713003F8ACF /* Main.storyboard in Resources */,
 				3A013960211BA3EE003F8ACF /* LaunchScreen.storyboard in Resources */,
 				3A01396C211C4567003F8ACF /* Mars.jpg in Resources */,
 				3A01395D211BA3EE003F8ACF /* Assets.xcassets in Resources */,
+				3A766CF9226F8BC4001D549D /* WorldText in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,7 +191,7 @@
 			files = (
 				3A013958211BA3ED003F8ACF /* ViewController.swift in Sources */,
 				3A013974211C4DE9003F8ACF /* File.swift in Sources */,
-				3A59A13421318B6500509741 /* planetIntroductionVC.swift in Sources */,
+				3A59A13421318B6500509741 /* IntroductionVC.swift in Sources */,
 				3A013956211BA3EC003F8ACF /* AppDelegate.swift in Sources */,
 				3A01396F211C46A1003F8ACF /* informationVC.swift in Sources */,
 			);

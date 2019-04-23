@@ -30,7 +30,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let world = Planets()
         world.name = "World"
         world.information = ""
-        world.image = UIImage(named: "Earth.jpg")!
+        world.image = UIImage(named: "World")!
         
         let mars = Planets()
         mars.name = "Mars"
@@ -71,7 +71,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         chosenPlanets = myPlanets[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! planetIntroductionVC
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! IntroductionVC
         self.performSegue(withIdentifier: "toDetailsVC", sender: nil)
     }
     

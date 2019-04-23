@@ -1,9 +1,8 @@
 import UIKit
 
-class planetIntroductionVC: UITableViewCell {
+class IntroductionVC: UITableViewCell {
 
     @IBOutlet weak var planetIntraductionImageView: UIImageView!
-    
     @IBOutlet weak var planetIntroductionLabel: UILabel!
     
     var secondSelectedPlanet = Planets()
