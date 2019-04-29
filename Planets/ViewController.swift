@@ -30,42 +30,42 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         let mercury = Planets()
         mercury.name = "Mercury"
-        mercury.information = ""
+        mercury.information = mercuryText
         mercury.image = UIImage(named: "Mercury.jpg")!
         
         let venus = Planets()
         venus.name = "Venus"
-        venus.information = ""
+        venus.information = venusText
         venus.image = UIImage(named: "Venus.jpg")!
 
         let world = Planets()
         world.name = "World"
-        world.information = ""
+        world.information = worldText
         world.image = UIImage(named: "World.jpg")!
         
         let mars = Planets()
         mars.name = "Mars"
-        mars.information = ""
+        mars.information = marsText
         mars.image = UIImage(named: "Mars.jpg")!
         
         let jupiter = Planets()
         jupiter.name = "Jupiter"
-        jupiter.information = ""
+        jupiter.information = jupiterText
         jupiter.image = UIImage(named: "Jupiter.jpg")!
         
         let saturn = Planets()
         saturn.name = "Saturn"
-        saturn.information = ""
+        saturn.information = saturnText
         saturn.image = UIImage(named: "Saturn.jpg")!
         
         let uranus = Planets()
         uranus.name = "Uranus"
-        uranus.information = ""
+        uranus.information = uranusText
         uranus.image = UIImage(named: "Uranus.jpg")!
         
         let neptune = Planets()
         neptune.name = "Neptune"
-        neptune.information = ""
+        neptune.information = neptuneText
         neptune.image = UIImage(named: "Neptune.jpg")!
     
         myPlanets.append(mercury)

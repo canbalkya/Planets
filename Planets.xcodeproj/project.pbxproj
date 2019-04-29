@@ -32,6 +32,7 @@
 		3A8C07F622774F290074F8C6 /* Uranus.text in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C07F522774F290074F8C6 /* Uranus.text */; };
 		3A8C07F8227750030074F8C6 /* Neptune.text in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C07F7227750030074F8C6 /* Neptune.text */; };
 		3A8C07FA227750C90074F8C6 /* Neptune.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C07F9227750C90074F8C6 /* Neptune.jpg */; };
+		3A8C081A227768770074F8C6 /* EducationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C0819227768770074F8C6 /* EducationVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		3A8C07F522774F290074F8C6 /* Uranus.text */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Uranus.text; sourceTree = "<group>"; };
 		3A8C07F7227750030074F8C6 /* Neptune.text */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Neptune.text; sourceTree = "<group>"; };
 		3A8C07F9227750C90074F8C6 /* Neptune.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Neptune.jpg; sourceTree = "<group>"; };
+		3A8C0819227768770074F8C6 /* EducationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				3A013957211BA3ED003F8ACF /* ViewController.swift */,
 				3A59A13321318B6500509741 /* IntroductionCell.swift */,
 				3A01396E211C46A1003F8ACF /* InformationVC.swift */,
+				3A8C0819227768770074F8C6 /* EducationVC.swift */,
 				3A013973211C4DE9003F8ACF /* File.swift */,
 				3A0139C7211CC713003F8ACF /* Main.storyboard */,
 				3A01395E211BA3EE003F8ACF /* LaunchScreen.storyboard */,
@@ -240,6 +243,7 @@
 				3A013958211BA3ED003F8ACF /* ViewController.swift in Sources */,
 				3A013974211C4DE9003F8ACF /* File.swift in Sources */,
 				3A59A13421318B6500509741 /* IntroductionCell.swift in Sources */,
+				3A8C081A227768770074F8C6 /* EducationVC.swift in Sources */,
 				3A013956211BA3EC003F8ACF /* AppDelegate.swift in Sources */,
 				3A01396F211C46A1003F8ACF /* InformationVC.swift in Sources */,
 			);
