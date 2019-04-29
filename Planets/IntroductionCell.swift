@@ -1,7 +1,6 @@
 import UIKit
 
-class IntroductionVC: UITableViewCell {
-
+class IntroductionCell: UITableViewCell {
     @IBOutlet weak var planetIntraductionImageView: UIImageView!
     @IBOutlet weak var planetIntroductionLabel: UILabel!
     
@@ -9,6 +8,7 @@ class IntroductionVC: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        backgroundColor = .black
         
         planetIntroductionLabel.text = secondSelectedPlanet.name
         planetIntraductionImageView.image = secondSelectedPlanet.image

@@ -1,47 +1,81 @@
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate { // , UISearchResultsUpdating
-    
-    @IBOutlet weak var searchBar: UISearchController?
-    
-    var searchController = UISearchController()
-    var resultsController = UITableViewController()
-    var filteredArray = [String]()
-    
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     @IBOutlet weak var tableView: UITableView!
+//    var searchController = UISearchController()
     
     var myPlanets = [Planets]()
+    var planetNames = [String]()
     var chosenPlanets = Planets()
+    
+    var searchTexts = [String]()
+    var searching = false
+    
+    let search = UISearchController(searchResultsController: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupNavBar()
         
-        searchController = UISearchController(searchResultsController: resultsController)
-        tableView.tableHeaderView = searchController.searchBar
+        search.searchResultsUpdater = self as? UISearchResultsUpdating
+        search.searchBar.delegate = self
+        search.obscuresBackgroundDuringPresentation = false
+        search.searchBar.placeholder = "Find a planet"
+        search.searchBar.keyboardAppearance = .dark
+        search.searchResultsUpdater = self as? UISearchResultsUpdating
+        navigationItem.searchController = search
+        
+//        tableView.tableHeaderView = searchController.searchBar
 //        searchController.searchResultsUpdater = self
-        resultsController.tableView.delegate = self
-        resultsController.tableView.dataSource = self
         
-        tableView.delegate = self
-        tableView.dataSource = self
+        let mercury = Planets()
+        mercury.name = "Mercury"
+        mercury.information = ""
+        mercury.image = UIImage(named: "Mercury.jpg")!
         
-        //Planet Class
-        
+        let venus = Planets()
+        venus.name = "Venus"
+        venus.information = ""
+        venus.image = UIImage(named: "Venus.jpg")!
+
         let world = Planets()
         world.name = "World"
         world.information = ""
-        world.image = UIImage(named: "World")!
+        world.image = UIImage(named: "World.jpg")!
         
         let mars = Planets()
         mars.name = "Mars"
         mars.information = ""
         mars.image = UIImage(named: "Mars.jpg")!
         
-        //Planets Array
+        let jupiter = Planets()
+        jupiter.name = "Jupiter"
+        jupiter.information = ""
+        jupiter.image = UIImage(named: "Jupiter.jpg")!
+        
+        let saturn = Planets()
+        saturn.name = "Saturn"
+        saturn.information = ""
+        saturn.image = UIImage(named: "Saturn.jpg")!
+        
+        let uranus = Planets()
+        uranus.name = "Uranus"
+        uranus.information = ""
+        uranus.image = UIImage(named: "Uranus.jpg")!
+        
+        let neptune = Planets()
+        neptune.name = "Neptune"
+        neptune.information = ""
+        neptune.image = UIImage(named: "Neptune.jpg")!
     
+        myPlanets.append(mercury)
+        myPlanets.append(venus)
         myPlanets.append(world)
         myPlanets.append(mars)
-        setupNavBar()
+        myPlanets.append(jupiter)
+        myPlanets.append(saturn)
+        myPlanets.append(uranus)
+        myPlanets.append(neptune)
     }
     
 //    func updateSearchResults(for searchController: UISearchController) {
@@ -49,35 +83,55 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 //    }
     
     func setupNavBar() {
-        
         navigationController?.navigationBar.prefersLargeTitles = true
         
         let searchController = UISearchController(searchResultsController: nil)
         navigationItem.searchController = searchController
         navigationItem.hidesSearchBarWhenScrolling = true
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return myPlanets.count
+        if searching {
+            return searchTexts.count
+        } else {
+            return myPlanets.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell()
-        cell.textLabel?.text = myPlanets[indexPath.row].name
-        cell.imageView?.image = myPlanets[indexPath.row].image
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! IntroductionCell
+        
+        if searching {
+            cell.planetIntroductionLabel?.text = searchTexts[indexPath.row]
+            cell.planetIntraductionImageView?.image = myPlanets[indexPath.row].image
+        } else {
+            cell.planetIntroductionLabel?.text = myPlanets[indexPath.item].name
+            cell.planetIntraductionImageView?.image = myPlanets[indexPath.row].image
+        }
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         chosenPlanets = myPlanets[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! IntroductionVC
-        self.performSegue(withIdentifier: "toDetailsVC", sender: nil)
+        performSegue(withIdentifier: "toDetailsVC", sender: nil)
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        searchTexts = planetNames.filter({ $0.lowercased().prefix(searchText.count) == searchText.lowercased() })
+        searching = true
+        tableView.reloadData()
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searching = false
+        search.searchBar.text = ""
+        tableView.reloadData()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetailsVC" {
-            let informationVC = segue.destination as! informationVC
+            let informationVC = segue.destination as! InformationVC
             informationVC.selectedPlanet = self.chosenPlanets
         }
     }
