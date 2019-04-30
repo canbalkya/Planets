@@ -10,13 +10,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     var searchTexts = [String]()
     var searching = false
-    
     let search = UISearchController(searchResultsController: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavBar()
-        
+
         search.searchResultsUpdater = self as? UISearchResultsUpdating
         search.searchBar.delegate = self
         search.obscuresBackgroundDuringPresentation = false
@@ -25,47 +24,56 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         search.searchResultsUpdater = self as? UISearchResultsUpdating
         navigationItem.searchController = search
         
+        if let filepath = Bundle.main.path(forResource: "Mercury", ofType: "text") { mercuryInfo = try! String(contentsOfFile: filepath) }
+        if let filepath = Bundle.main.path(forResource: "Venus", ofType: "text") { venusInfo = try! String(contentsOfFile: filepath) }
+        if let filepath = Bundle.main.path(forResource: "World", ofType: "text") { worldInfo = try! String(contentsOfFile: filepath) }
+        if let filepath = Bundle.main.path(forResource: "Mars", ofType: "text") { marsInfo = try! String(contentsOfFile: filepath) }
+        if let filepath = Bundle.main.path(forResource: "Jupiter", ofType: "text") { jupiterInfo = try! String(contentsOfFile: filepath) }
+        if let filepath = Bundle.main.path(forResource: "Saturn", ofType: "text") { saturnInfo = try! String(contentsOfFile: filepath) }
+        if let filepath = Bundle.main.path(forResource: "Uranus", ofType: "text") { uranusInfo = try! String(contentsOfFile: filepath) }
+        if let filepath = Bundle.main.path(forResource: "Neptune", ofType: "text") { neptuneInfo = try! String(contentsOfFile: filepath) }
+        
 //        tableView.tableHeaderView = searchController.searchBar
 //        searchController.searchResultsUpdater = self
         
         let mercury = Planets()
         mercury.name = "Mercury"
-        mercury.information = mercuryText
+        mercury.information = mercuryInfo
         mercury.image = UIImage(named: "Mercury.jpg")!
         
         let venus = Planets()
         venus.name = "Venus"
-        venus.information = venusText
+        venus.information = venusInfo
         venus.image = UIImage(named: "Venus.jpg")!
 
         let world = Planets()
         world.name = "World"
-        world.information = worldText
+        world.information = worldInfo
         world.image = UIImage(named: "World.jpg")!
         
         let mars = Planets()
         mars.name = "Mars"
-        mars.information = marsText
+        mars.information = marsInfo
         mars.image = UIImage(named: "Mars.jpg")!
         
         let jupiter = Planets()
         jupiter.name = "Jupiter"
-        jupiter.information = jupiterText
+        jupiter.information = jupiterInfo
         jupiter.image = UIImage(named: "Jupiter.jpg")!
         
         let saturn = Planets()
         saturn.name = "Saturn"
-        saturn.information = saturnText
+        saturn.information = saturnInfo
         saturn.image = UIImage(named: "Saturn.jpg")!
         
         let uranus = Planets()
         uranus.name = "Uranus"
-        uranus.information = uranusText
+        uranus.information = uranusInfo
         uranus.image = UIImage(named: "Uranus.jpg")!
         
         let neptune = Planets()
         neptune.name = "Neptune"
-        neptune.information = neptuneText
+        neptune.information = neptuneInfo
         neptune.image = UIImage(named: "Neptune.jpg")!
     
         myPlanets.append(mercury)
