@@ -124,7 +124,7 @@
                                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES" shipmentTrackingNumber="YES" flightNumber="YES" lookupSuggestion="YES"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EkM-xz-jQD">
-                                                <rect key="frame" x="163" y="285" width="56" height="22"/>
+                                                <rect key="frame" x="159" y="285" width="56" height="22"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -134,15 +134,15 @@
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="rpq-HG-0JF" secondAttribute="bottom" constant="20" id="8Id-fE-5oS"/>
                                             <constraint firstAttribute="trailing" secondItem="rpq-HG-0JF" secondAttribute="trailing" constant="8" id="8Yd-h6-eQd"/>
-                                            <constraint firstItem="EkM-xz-jQD" firstAttribute="top" secondItem="ggH-TH-t1i" secondAttribute="bottom" constant="8" id="AoK-Ds-ghR"/>
-                                            <constraint firstAttribute="trailing" secondItem="EkM-xz-jQD" secondAttribute="trailing" constant="156" id="HmU-j5-bHB"/>
                                             <constraint firstAttribute="trailing" secondItem="ggH-TH-t1i" secondAttribute="trailing" constant="40" id="PFe-gV-QIF"/>
+                                            <constraint firstItem="EkM-xz-jQD" firstAttribute="leading" secondItem="Kfw-PR-EAI" secondAttribute="leading" constant="159" id="PPh-Wv-xf3"/>
                                             <constraint firstItem="ggH-TH-t1i" firstAttribute="leading" secondItem="Kfw-PR-EAI" secondAttribute="leading" constant="40" id="RFI-gm-4kb"/>
+                                            <constraint firstAttribute="trailing" secondItem="EkM-xz-jQD" secondAttribute="trailing" constant="160" id="SMH-gT-t8Z"/>
+                                            <constraint firstItem="rpq-HG-0JF" firstAttribute="top" secondItem="EkM-xz-jQD" secondAttribute="bottom" constant="7" id="TAB-oG-P0y"/>
                                             <constraint firstAttribute="height" constant="1191" id="YVM-IG-Fi4"/>
                                             <constraint firstItem="rpq-HG-0JF" firstAttribute="leading" secondItem="Kfw-PR-EAI" secondAttribute="leading" constant="8" id="dBH-AI-pXp"/>
+                                            <constraint firstItem="EkM-xz-jQD" firstAttribute="top" secondItem="ggH-TH-t1i" secondAttribute="bottom" constant="8" id="fJ3-lg-ZEK"/>
                                             <constraint firstItem="ggH-TH-t1i" firstAttribute="top" secondItem="Kfw-PR-EAI" secondAttribute="top" constant="8" id="gj3-FQ-xnV"/>
-                                            <constraint firstItem="EkM-xz-jQD" firstAttribute="leading" secondItem="Kfw-PR-EAI" secondAttribute="leading" constant="163" id="qNO-jr-BiW"/>
-                                            <constraint firstItem="rpq-HG-0JF" firstAttribute="top" secondItem="EkM-xz-jQD" secondAttribute="bottom" constant="7" id="vo2-l1-j10"/>
                                         </constraints>
                                     </view>
                                 </subviews>

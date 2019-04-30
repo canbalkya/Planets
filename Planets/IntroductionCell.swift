@@ -9,6 +9,7 @@ class IntroductionCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         backgroundColor = .black
+        selectionStyle = .none
         
         planetIntroductionLabel.text = secondSelectedPlanet.name
         planetIntraductionImageView.image = secondSelectedPlanet.image
