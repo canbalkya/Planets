@@ -33,6 +33,8 @@
 		3A8C07F8227750030074F8C6 /* Neptune.text in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C07F7227750030074F8C6 /* Neptune.text */; };
 		3A8C07FA227750C90074F8C6 /* Neptune.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C07F9227750C90074F8C6 /* Neptune.jpg */; };
 		3A8C081A227768770074F8C6 /* EducationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8C0819227768770074F8C6 /* EducationVC.swift */; };
+		3A8C083A227B57AC0074F8C6 /* Kepler16B.text in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C0839227B57AC0074F8C6 /* Kepler16B.text */; };
+		3A8C083C227B57F80074F8C6 /* Kepler16B.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C083B227B57F80074F8C6 /* Kepler16B.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		3A8C07F7227750030074F8C6 /* Neptune.text */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Neptune.text; sourceTree = "<group>"; };
 		3A8C07F9227750C90074F8C6 /* Neptune.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Neptune.jpg; sourceTree = "<group>"; };
 		3A8C0819227768770074F8C6 /* EducationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationVC.swift; sourceTree = "<group>"; };
+		3A8C0839227B57AC0074F8C6 /* Kepler16B.text */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Kepler16B.text; sourceTree = "<group>"; };
+		3A8C083B227B57F80074F8C6 /* Kepler16B.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kepler16B.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,7 @@
 				3A8C07F122774DBA0074F8C6 /* Saturn.jpg */,
 				3A8C07F322774F0F0074F8C6 /* Uranus.jpg */,
 				3A8C07F9227750C90074F8C6 /* Neptune.jpg */,
+				3A8C083B227B57F80074F8C6 /* Kepler16B.jpg */,
 			);
 			name = Images;
 			path = "İmages";
@@ -148,6 +153,7 @@
 				3A8C07EF22774D5D0074F8C6 /* Saturn.text */,
 				3A8C07F522774F290074F8C6 /* Uranus.text */,
 				3A8C07F7227750030074F8C6 /* Neptune.text */,
+				3A8C0839227B57AC0074F8C6 /* Kepler16B.text */,
 			);
 			path = Texts;
 			sourceTree = "<group>";
@@ -219,6 +225,8 @@
 				3A8C079E2270B69C0074F8C6 /* Venus.text in Resources */,
 				3A8C07FA227750C90074F8C6 /* Neptune.jpg in Resources */,
 				3A8C07A22270B7700074F8C6 /* Venus.jpg in Resources */,
+				3A8C083A227B57AC0074F8C6 /* Kepler16B.text in Resources */,
+				3A8C083C227B57F80074F8C6 /* Kepler16B.jpg in Resources */,
 				3A01396A211C4563003F8ACF /* World.jpg in Resources */,
 				3A8C07F022774D5D0074F8C6 /* Saturn.text in Resources */,
 				3A0139C8211CC713003F8ACF /* Main.storyboard in Resources */,

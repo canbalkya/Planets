@@ -91,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2095" y="-621"/>
+            <point key="canvasLocation" x="2023" y="-621"/>
         </scene>
         <!--InformationVC-->
         <scene sceneID="lzW-fW-sp0">
@@ -115,7 +115,7 @@
                                                     <constraint firstAttribute="height" constant="269" id="IRb-bm-WZZ"/>
                                                 </constraints>
                                             </imageView>
-                                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" indicatorStyle="black" canCancelContentTouches="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="rpq-HG-0JF">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" indicatorStyle="black" editable="NO" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rpq-HG-0JF">
                                                 <rect key="frame" x="8" y="314" width="359" height="857"/>
                                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -123,8 +123,8 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert"/>
                                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES" shipmentTrackingNumber="YES" flightNumber="YES" lookupSuggestion="YES"/>
                                             </textView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EkM-xz-jQD">
-                                                <rect key="frame" x="159" y="285" width="56" height="22"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Planet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EkM-xz-jQD">
+                                                <rect key="frame" x="122" y="285" width="131" height="22"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -132,17 +132,17 @@
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstItem="EkM-xz-jQD" firstAttribute="top" secondItem="ggH-TH-t1i" secondAttribute="bottom" constant="8" id="4Xs-CO-Azi"/>
                                             <constraint firstAttribute="bottom" secondItem="rpq-HG-0JF" secondAttribute="bottom" constant="20" id="8Id-fE-5oS"/>
                                             <constraint firstAttribute="trailing" secondItem="rpq-HG-0JF" secondAttribute="trailing" constant="8" id="8Yd-h6-eQd"/>
+                                            <constraint firstItem="rpq-HG-0JF" firstAttribute="top" secondItem="EkM-xz-jQD" secondAttribute="bottom" constant="7" id="9se-Zc-k6N"/>
+                                            <constraint firstAttribute="trailing" secondItem="EkM-xz-jQD" secondAttribute="trailing" constant="122" id="Oth-Jg-a0I"/>
                                             <constraint firstAttribute="trailing" secondItem="ggH-TH-t1i" secondAttribute="trailing" constant="40" id="PFe-gV-QIF"/>
-                                            <constraint firstItem="EkM-xz-jQD" firstAttribute="leading" secondItem="Kfw-PR-EAI" secondAttribute="leading" constant="159" id="PPh-Wv-xf3"/>
                                             <constraint firstItem="ggH-TH-t1i" firstAttribute="leading" secondItem="Kfw-PR-EAI" secondAttribute="leading" constant="40" id="RFI-gm-4kb"/>
-                                            <constraint firstAttribute="trailing" secondItem="EkM-xz-jQD" secondAttribute="trailing" constant="160" id="SMH-gT-t8Z"/>
-                                            <constraint firstItem="rpq-HG-0JF" firstAttribute="top" secondItem="EkM-xz-jQD" secondAttribute="bottom" constant="7" id="TAB-oG-P0y"/>
                                             <constraint firstAttribute="height" constant="1191" id="YVM-IG-Fi4"/>
                                             <constraint firstItem="rpq-HG-0JF" firstAttribute="leading" secondItem="Kfw-PR-EAI" secondAttribute="leading" constant="8" id="dBH-AI-pXp"/>
-                                            <constraint firstItem="EkM-xz-jQD" firstAttribute="top" secondItem="ggH-TH-t1i" secondAttribute="bottom" constant="8" id="fJ3-lg-ZEK"/>
                                             <constraint firstItem="ggH-TH-t1i" firstAttribute="top" secondItem="Kfw-PR-EAI" secondAttribute="top" constant="8" id="gj3-FQ-xnV"/>
+                                            <constraint firstItem="EkM-xz-jQD" firstAttribute="leading" secondItem="Kfw-PR-EAI" secondAttribute="leading" constant="122" id="txx-Xo-Dqj"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -164,6 +164,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YGr-yZ-Ufr"/>
                     </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="T4H-AK-oUA"/>
                     <size key="freeformSize" width="375" height="1300"/>
                     <connections>
                         <outlet property="imageView" destination="ggH-TH-t1i" id="Zqv-ow-x69"/>

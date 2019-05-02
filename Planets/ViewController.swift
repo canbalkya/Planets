@@ -2,7 +2,6 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     @IBOutlet weak var tableView: UITableView!
-//    var searchController = UISearchController()
     
     var myPlanets = [Planets]()
     var planetNames = [String]()
@@ -32,6 +31,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if let filepath = Bundle.main.path(forResource: "Saturn", ofType: "text") { saturnInfo = try! String(contentsOfFile: filepath) }
         if let filepath = Bundle.main.path(forResource: "Uranus", ofType: "text") { uranusInfo = try! String(contentsOfFile: filepath) }
         if let filepath = Bundle.main.path(forResource: "Neptune", ofType: "text") { neptuneInfo = try! String(contentsOfFile: filepath) }
+        if let filepath = Bundle.main.path(forResource: "Kepler16B", ofType: "text") { kepler16BInfo = try! String(contentsOfFile: filepath) }
         
 //        tableView.tableHeaderView = searchController.searchBar
 //        searchController.searchResultsUpdater = self
@@ -75,6 +75,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         neptune.name = "Neptune"
         neptune.information = neptuneInfo
         neptune.image = UIImage(named: "Neptune.jpg")!
+        
+        let kepler16B = Planets()
+        kepler16B.name = "Kepler-16b"
+        kepler16B.information = kepler16BInfo
+        kepler16B.image = UIImage(named: "Kepler16B.jpg")!
     
         myPlanets.append(mercury)
         myPlanets.append(venus)
@@ -84,11 +89,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         myPlanets.append(saturn)
         myPlanets.append(uranus)
         myPlanets.append(neptune)
+        myPlanets.append(kepler16B)
     }
-    
-//    func updateSearchResults(for searchController: UISearchController) {
-//        <#code#>
-//    }
     
     func setupNavBar() {
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -135,6 +137,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         searching = false
         search.searchBar.text = ""
         tableView.reloadData()
+    }
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
