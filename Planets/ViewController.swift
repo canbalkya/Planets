@@ -31,7 +31,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if let filepath = Bundle.main.path(forResource: "Saturn", ofType: "text") { saturnInfo = try! String(contentsOfFile: filepath) }
         if let filepath = Bundle.main.path(forResource: "Uranus", ofType: "text") { uranusInfo = try! String(contentsOfFile: filepath) }
         if let filepath = Bundle.main.path(forResource: "Neptune", ofType: "text") { neptuneInfo = try! String(contentsOfFile: filepath) }
-        if let filepath = Bundle.main.path(forResource: "Kepler16b", ofType: "text") { kepler16BInfo = try! String(contentsOfFile: filepath) }
+        if let filepath = Bundle.main.path(forResource: "Kepler16B", ofType: "text") { kepler16BInfo = try! String(contentsOfFile: filepath) }
         if let filepath = Bundle.main.path(forResource: "Kepler186f", ofType: "text") { kepler186FInfo = try! String(contentsOfFile: filepath) }
         
 //        tableView.tableHeaderView = searchController.searchBar
@@ -80,7 +80,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let kepler16B = Planets()
         kepler16B.name = "Kepler-16b"
         kepler16B.information = kepler16BInfo
-        kepler16B.image = UIImage(named: "Kepler16b.jpg")!
+        kepler16B.image = UIImage(named: "Kepler16B.jpg")!
         
         let kepler186F = Planets()
         kepler186F.name = "Kepler-186f"
