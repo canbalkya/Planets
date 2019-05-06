@@ -31,7 +31,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if let filepath = Bundle.main.path(forResource: "Saturn", ofType: "text") { saturnInfo = try! String(contentsOfFile: filepath) }
         if let filepath = Bundle.main.path(forResource: "Uranus", ofType: "text") { uranusInfo = try! String(contentsOfFile: filepath) }
         if let filepath = Bundle.main.path(forResource: "Neptune", ofType: "text") { neptuneInfo = try! String(contentsOfFile: filepath) }
-        if let filepath = Bundle.main.path(forResource: "Kepler16B", ofType: "text") { kepler16BInfo = try! String(contentsOfFile: filepath) }
+        if let filepath = Bundle.main.path(forResource: "Kepler16b", ofType: "text") { kepler16BInfo = try! String(contentsOfFile: filepath) }
+        if let filepath = Bundle.main.path(forResource: "Kepler186f", ofType: "text") { kepler186FInfo = try! String(contentsOfFile: filepath) }
         
 //        tableView.tableHeaderView = searchController.searchBar
 //        searchController.searchResultsUpdater = self
@@ -79,7 +80,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let kepler16B = Planets()
         kepler16B.name = "Kepler-16b"
         kepler16B.information = kepler16BInfo
-        kepler16B.image = UIImage(named: "Kepler16B.jpg")!
+        kepler16B.image = UIImage(named: "Kepler16b.jpg")!
+        
+        let kepler186F = Planets()
+        kepler186F.name = "Kepler-186f"
+        kepler186F.information = kepler186FInfo
+        kepler186F.image = UIImage(named: "Kepler186f.jpg")!
     
         myPlanets.append(mercury)
         myPlanets.append(venus)
@@ -90,6 +96,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         myPlanets.append(uranus)
         myPlanets.append(neptune)
         myPlanets.append(kepler16B)
+        myPlanets.append(kepler186F)
     }
     
     func setupNavBar() {
