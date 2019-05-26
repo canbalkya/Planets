@@ -31,8 +31,10 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if let filepath = Bundle.main.path(forResource: "Saturn", ofType: "text") { saturnInfo = try! String(contentsOfFile: filepath) }
         if let filepath = Bundle.main.path(forResource: "Uranus", ofType: "text") { uranusInfo = try! String(contentsOfFile: filepath) }
         if let filepath = Bundle.main.path(forResource: "Neptune", ofType: "text") { neptuneInfo = try! String(contentsOfFile: filepath) }
-        if let filepath = Bundle.main.path(forResource: "Kepler16B", ofType: "text") { kepler16BInfo = try! String(contentsOfFile: filepath) }
+        if let filepath = Bundle.main.path(forResource: "Kepler16b", ofType: "text") { kepler16BInfo = try! String(contentsOfFile: filepath) }
         if let filepath = Bundle.main.path(forResource: "Kepler186f", ofType: "text") { kepler186FInfo = try! String(contentsOfFile: filepath) }
+        if let filepath = Bundle.main.path(forResource: "Kepler296e", ofType: "text") { kepler296EInfo = try! String(contentsOfFile: filepath) }
+        if let filepath = Bundle.main.path(forResource: "Kepler440b", ofType: "text") { kepler440BInfo = try! String(contentsOfFile: filepath) }
         
 //        tableView.tableHeaderView = searchController.searchBar
 //        searchController.searchResultsUpdater = self
@@ -80,12 +82,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let kepler16B = Planets()
         kepler16B.name = "Kepler-16b"
         kepler16B.information = kepler16BInfo
-        kepler16B.image = UIImage(named: "Kepler16B.jpg")!
+        kepler16B.image = UIImage(named: "Kepler16b.jpg")!
         
         let kepler186F = Planets()
         kepler186F.name = "Kepler-186f"
         kepler186F.information = kepler186FInfo
         kepler186F.image = UIImage(named: "Kepler186f.jpg")!
+        
+        let kepler296E = Planets()
+        kepler296E.name = "Kepler-296e"
+        kepler296E.information = kepler296EInfo
+        kepler296E.image = UIImage(named: "Kepler296e.jpg")!
+        
+        let kepler440B = Planets()
+        kepler440B.name = "Kepler-440b"
+        kepler440B.information = kepler440BInfo
+        kepler440B.image = UIImage(named: "Kepler440b.jpg")!
     
         myPlanets.append(mercury)
         myPlanets.append(venus)
@@ -97,6 +109,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         myPlanets.append(neptune)
         myPlanets.append(kepler16B)
         myPlanets.append(kepler186F)
+        myPlanets.append(kepler296E)
+        myPlanets.append(kepler440B)
     }
     
     func setupNavBar() {
