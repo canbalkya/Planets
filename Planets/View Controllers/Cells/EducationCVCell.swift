@@ -12,9 +12,9 @@ class EducationCVCell: UICollectionViewCell {
     @IBOutlet weak var button: UIButton!
     
     override func awakeFromNib() {
-        button.layer.shadowRadius = 3
+        button.layer.shadowRadius = 10
     }
     
-    @IBAction func button(_ sender: UIButton) {
+    @IBAction func actionButton(_ sender: UIButton) {
     }
 }
