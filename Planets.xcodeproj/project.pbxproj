@@ -17,7 +17,6 @@
 		3A0AF783229AEE9B00569C51 /* Kepler296e.text in Resources */ = {isa = PBXBuildFile; fileRef = 3A0AF782229AEE9B00569C51 /* Kepler296e.text */; };
 		3A0AF789229AF0F500569C51 /* Kepler440b.text in Resources */ = {isa = PBXBuildFile; fileRef = 3A0AF788229AF0F500569C51 /* Kepler440b.text */; };
 		3A0AF78D229AFA0500569C51 /* EducationCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0AF78C229AFA0500569C51 /* EducationCVCell.swift */; };
-		3A0AF78F229B003C00569C51 /* Kepler16b.text in Resources */ = {isa = PBXBuildFile; fileRef = 3A0AF78E229B003C00569C51 /* Kepler16b.text */; };
 		3A0AF7A0229B024700569C51 /* Uranus.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A0AF795229B024700569C51 /* Uranus.jpg */; };
 		3A0AF7A1229B024700569C51 /* World.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A0AF796229B024700569C51 /* World.jpg */; };
 		3A0AF7A2229B024700569C51 /* Mars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A0AF797229B024700569C51 /* Mars.jpg */; };
@@ -57,7 +56,6 @@
 		3A0AF782229AEE9B00569C51 /* Kepler296e.text */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Kepler296e.text; sourceTree = "<group>"; };
 		3A0AF788229AF0F500569C51 /* Kepler440b.text */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Kepler440b.text; sourceTree = "<group>"; };
 		3A0AF78C229AFA0500569C51 /* EducationCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EducationCVCell.swift; sourceTree = "<group>"; };
-		3A0AF78E229B003C00569C51 /* Kepler16b.text */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Kepler16b.text; sourceTree = "<group>"; };
 		3A0AF795229B024700569C51 /* Uranus.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Uranus.jpg; sourceTree = "<group>"; };
 		3A0AF796229B024700569C51 /* World.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = World.jpg; sourceTree = "<group>"; };
 		3A0AF797229B024700569C51 /* Mars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mars.jpg; sourceTree = "<group>"; };
@@ -202,7 +200,6 @@
 				3A8C07EF22774D5D0074F8C6 /* Saturn.text */,
 				3A8C07F522774F290074F8C6 /* Uranus.text */,
 				3A8C07F7227750030074F8C6 /* Neptune.text */,
-				3A0AF78E229B003C00569C51 /* Kepler16b.text */,
 				3A8C08852280C2180074F8C6 /* Kepler186f.text */,
 				3A0AF782229AEE9B00569C51 /* Kepler296e.text */,
 				3A0AF788229AF0F500569C51 /* Kepler440b.text */,
@@ -278,7 +275,6 @@
 				3A0AF7A2229B024700569C51 /* Mars.jpg in Resources */,
 				3A0AF789229AF0F500569C51 /* Kepler440b.text in Resources */,
 				3A8C079E2270B69C0074F8C6 /* Venus.text in Resources */,
-				3A0AF78F229B003C00569C51 /* Kepler16b.text in Resources */,
 				3A0AF7A7229B024700569C51 /* Kepler440b.jpg in Resources */,
 				3A0AF7AC229B025300569C51 /* Kepler16b.jpg in Resources */,
 				3A0AF7A5229B024700569C51 /* Neptune.jpg in Resources */,
