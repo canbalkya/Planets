@@ -11,12 +11,14 @@ import UIKit
 class EducationVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     @IBOutlet var collectionView: UICollectionView!
     
+    let educations = [Any]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return educations.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
