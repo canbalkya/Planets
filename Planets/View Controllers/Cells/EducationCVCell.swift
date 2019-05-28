@@ -9,11 +9,13 @@
 import UIKit
 
 class EducationCVCell: UICollectionViewCell {
-    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var educationButton: UIButton!
+    @IBOutlet weak var educationTitle: UILabel!
+    @IBOutlet weak var educationTextView: UITextView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        button.layer.shadowRadius = 10
+        educationButton.layer.cornerRadius = 10
     }
     
     @IBAction func actionButton(_ sender: UIButton) {
