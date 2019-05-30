@@ -8,14 +8,15 @@
 
 import UIKit
 
-class EducationCVCell: UICollectionViewCell {
+class EducationTVCell: UITableViewCell {
+    @IBOutlet weak var educationView: UIView!
     @IBOutlet weak var educationButton: UIButton!
     @IBOutlet weak var educationTitle: UILabel!
     @IBOutlet weak var educationTextView: UITextView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        educationButton.layer.cornerRadius = 10
+        educationView.layer.cornerRadius = 30
     }
     
     @IBAction func actionButton(_ sender: UIButton) {

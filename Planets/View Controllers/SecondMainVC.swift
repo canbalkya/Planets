@@ -8,8 +8,8 @@
 
 import UIKit
 
-class EducationVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-    @IBOutlet var collectionView: UICollectionView!
+class EducationVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet var tableView: UITableView!
     
     let educations = [Any]()
     
@@ -17,12 +17,16 @@ class EducationVC: UIViewController, UICollectionViewDelegate, UICollectionViewD
         super.viewDidLoad()
     }
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return educations.count
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CCell", for: indexPath) as? EducationCVCell
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CCell", for: indexPath) as? EducationTVCell
         return cell!
+    }
+    
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 300
     }
 }
