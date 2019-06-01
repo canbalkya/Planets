@@ -11,14 +11,14 @@ import UIKit
 class EducationVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var tableView: UITableView!
     
-    let educations = [Any]()
+    let educations = cases
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return cases.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

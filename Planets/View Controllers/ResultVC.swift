@@ -9,7 +9,6 @@
 import UIKit
 
 class ResultVC: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }

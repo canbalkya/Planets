@@ -19,6 +19,14 @@ class QuestionVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        questionLabel.text = "\(firstQuestion.count)."
+        questionTextView.text = "\(firstQuestion.question)"
+        
+        firstButton.setTitle("\(firstQuestion.answers[0])", for: .normal)
+        secondButton.setTitle("\(firstQuestion.answers[1])", for: .normal)
+        thirdButton.setTitle("\(firstQuestion.answers[2])", for: .normal)
+        fourthButton.setTitle("\(firstQuestion.answers[3])", for: .normal)
+        
         firstButton.layer.cornerRadius = 10
         secondButton.layer.cornerRadius = 10
         thirdButton.layer.cornerRadius = 10
