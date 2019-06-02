@@ -16,7 +16,8 @@ class EducationTVCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        educationView.layer.cornerRadius = 30
+        educationView.layer.cornerRadius = 20
+        selectionStyle = .none
     }
     
     @IBAction func actionButton(_ sender: UIButton) {
