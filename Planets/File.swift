@@ -32,6 +32,8 @@ let secondCase = [firstQuestion, secondQuestion, thirdQuestion, fourthQuestion, 
 
 let cases = [firstCase, secondCase]
 
+var open = false
+
 var mercuryInfo = ""
 var venusInfo = ""
 var worldInfo = ""

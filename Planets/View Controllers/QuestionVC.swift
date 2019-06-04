@@ -17,31 +17,113 @@ class QuestionVC: UIViewController {
     @IBOutlet weak var thirdButton: UIButton!
     @IBOutlet weak var fourthButton: UIButton!
     
+    var question = 1
+    var trueAnswer = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        questionLabel.text = "\(firstQuestion.count)."
-        questionTextView.text = "\(firstQuestion.question)"
-        
-        firstButton.setTitle("\(firstQuestion.answers[0])", for: .normal)
-        secondButton.setTitle("\(firstQuestion.answers[1])", for: .normal)
-        thirdButton.setTitle("\(firstQuestion.answers[2])", for: .normal)
-        fourthButton.setTitle("\(firstQuestion.answers[3])", for: .normal)
-        
         firstButton.layer.cornerRadius = 10
         secondButton.layer.cornerRadius = 10
         thirdButton.layer.cornerRadius = 10
         fourthButton.layer.cornerRadius = 10
+        
+        switch question {
+        case 1:
+            questionLabel.text = "\(firstQuestion.count)."
+            questionTextView.text = "\(firstQuestion.question)"
+
+            firstButton.setTitle("\(firstQuestion.answers[0])", for: .normal)
+            secondButton.setTitle("\(firstQuestion.answers[1])", for: .normal)
+            thirdButton.setTitle("\(firstQuestion.answers[2])", for: .normal)
+            fourthButton.setTitle("\(firstQuestion.answers[3])", for: .normal)
+
+        case 2:
+            print("Hello, World!")
+            questionLabel.text = "\(firstQuestion.count)."
+            questionTextView.text = "\(firstQuestion.question)"
+
+            firstButton.setTitle("\(firstQuestion.answers[0])", for: .normal)
+            secondButton.setTitle("\(firstQuestion.answers[1])", for: .normal)
+            thirdButton.setTitle("\(firstQuestion.answers[2])", for: .normal)
+            fourthButton.setTitle("\(firstQuestion.answers[3])", for: .normal)
+
+        case 3:
+            questionLabel.text = "\(firstQuestion.count)."
+            questionTextView.text = "\(firstQuestion.question)"
+
+            firstButton.setTitle("\(firstQuestion.answers[0])", for: .normal)
+            secondButton.setTitle("\(firstQuestion.answers[1])", for: .normal)
+            thirdButton.setTitle("\(firstQuestion.answers[2])", for: .normal)
+            fourthButton.setTitle("\(firstQuestion.answers[3])", for: .normal)
+
+        case 4:
+            questionLabel.text = "\(firstQuestion.count)."
+            questionTextView.text = "\(firstQuestion.question)"
+
+            firstButton.setTitle("\(firstQuestion.answers[0])", for: .normal)
+            secondButton.setTitle("\(firstQuestion.answers[1])", for: .normal)
+            thirdButton.setTitle("\(firstQuestion.answers[2])", for: .normal)
+            fourthButton.setTitle("\(firstQuestion.answers[3])", for: .normal)
+
+        case 5:
+            questionLabel.text = "\(firstQuestion.count)."
+            questionTextView.text = "\(firstQuestion.question)"
+
+            firstButton.setTitle("\(firstQuestion.answers[0])", for: .normal)
+            secondButton.setTitle("\(firstQuestion.answers[1])", for: .normal)
+            thirdButton.setTitle("\(firstQuestion.answers[2])", for: .normal)
+            fourthButton.setTitle("\(firstQuestion.answers[3])", for: .normal)
+
+        case 6:
+            questionLabel.text = "\(firstQuestion.count)."
+            questionTextView.text = "\(firstQuestion.question)"
+
+            firstButton.setTitle("\(firstQuestion.answers[0])", for: .normal)
+            secondButton.setTitle("\(firstQuestion.answers[1])", for: .normal)
+            thirdButton.setTitle("\(firstQuestion.answers[2])", for: .normal)
+            fourthButton.setTitle("\(firstQuestion.answers[3])", for: .normal)
+
+        case 7:
+            questionLabel.text = "\(firstQuestion.count)."
+            questionTextView.text = "\(firstQuestion.question)"
+
+            firstButton.setTitle("\(firstQuestion.answers[0])", for: .normal)
+            secondButton.setTitle("\(firstQuestion.answers[1])", for: .normal)
+            thirdButton.setTitle("\(firstQuestion.answers[2])", for: .normal)
+            fourthButton.setTitle("\(firstQuestion.answers[3])", for: .normal)
+
+        case 8:
+            questionLabel.text = "\(firstQuestion.count)."
+            questionTextView.text = "\(firstQuestion.question)"
+
+            firstButton.setTitle("\(firstQuestion.answers[0])", for: .normal)
+            secondButton.setTitle("\(firstQuestion.answers[1])", for: .normal)
+            thirdButton.setTitle("\(firstQuestion.answers[2])", for: .normal)
+            fourthButton.setTitle("\(firstQuestion.answers[3])", for: .normal)
+
+        case 9:
+            questionLabel.text = "\(firstQuestion.count)."
+            questionTextView.text = "\(firstQuestion.question)"
+
+            firstButton.setTitle("\(firstQuestion.answers[0])", for: .normal)
+            secondButton.setTitle("\(firstQuestion.answers[1])", for: .normal)
+            thirdButton.setTitle("\(firstQuestion.answers[2])", for: .normal)
+            fourthButton.setTitle("\(firstQuestion.answers[3])", for: .normal)
+
+        case 10:
+            questionLabel.text = "\(firstQuestion.count)."
+            questionTextView.text = "\(firstQuestion.question)"
+
+            firstButton.setTitle("\(firstQuestion.answers[0])", for: .normal)
+            secondButton.setTitle("\(firstQuestion.answers[1])", for: .normal)
+            thirdButton.setTitle("\(firstQuestion.answers[2])", for: .normal)
+            fourthButton.setTitle("\(firstQuestion.answers[3])", for: .normal)
+        default:
+            fatalError("It's impossible!")
+        }
     }
     
-    @IBAction func firstActionButton(_ sender: UIButton) {
-    }
-    
-    @IBAction func secondActionButton(_ sender: UIButton) {
-    }
-    
-    @IBAction func thirdActionButton(_ sender: UIButton) {
-    }
-    
-    @IBAction func fourthButton(_ sender: UIButton) {
+    @IBAction func checkAction(_ sender: UIBarButtonItem) {
+        question += 1
     }
 }
