@@ -38,7 +38,6 @@ class QuestionVC: UIViewController {
             fourthButton.setTitle("\(firstQuestion.answers[3])", for: .normal)
 
         case 2:
-            print("Hello, World!")
             questionLabel.text = "\(firstQuestion.count)."
             questionTextView.text = "\(firstQuestion.question)"
 

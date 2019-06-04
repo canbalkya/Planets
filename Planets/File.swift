@@ -32,7 +32,10 @@ let secondCase = [firstQuestion, secondQuestion, thirdQuestion, fourthQuestion, 
 
 let cases = [firstCase, secondCase]
 
-var open = false
+var firstOpen = false
+var secondOpen = false
+var thirdOpen = false
+var fourthOpen = false
 
 var mercuryInfo = ""
 var venusInfo = ""

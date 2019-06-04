@@ -23,10 +23,10 @@ class FirstAnswerButton: UIButton {
     func touch() {
         if isChecked == true {
             self.backgroundColor = #colorLiteral(red: 0.08387736344, green: 0.08470783239, blue: 0.08470783239, alpha: 1)
-            open = true
+            firstOpen = true
         } else {
             self.backgroundColor = #colorLiteral(red: 0.09410236031, green: 0.09412645549, blue: 0.09410081059, alpha: 1)
-            open = false
+            firstOpen = false
         }
     }
     
