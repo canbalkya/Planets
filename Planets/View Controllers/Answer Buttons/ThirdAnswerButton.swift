@@ -16,7 +16,7 @@ class ThirdAnswerButton: UIButton {
     }
     
     override func awakeFromNib() {
-        self.addTarget(self, action: #selector(ThirdAnswerButton.buttonClicked), for: UIControlEvents.touchUpInside)
+        self.addTarget(self, action: #selector(ThirdAnswerButton.buttonClicked), for: UIControl.Event.touchUpInside)
         self.touch()
     }
     

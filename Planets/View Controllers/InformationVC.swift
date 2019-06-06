@@ -9,7 +9,6 @@ class InformationVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         nameLabel.text = selectedPlanet.name
         informationText.text = selectedPlanet.information
         imageView.image = selectedPlanet.image
