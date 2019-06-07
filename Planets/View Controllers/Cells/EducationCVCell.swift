@@ -13,10 +13,14 @@ class EducationTVCell: UITableViewCell {
     @IBOutlet weak var educationButton: UIButton!
     @IBOutlet weak var educationTitle: UILabel!
     @IBOutlet weak var educationTextView: UITextView!
+    @IBOutlet weak var educationImageView: UIImageView!
+    @IBOutlet weak var blur: UIVisualEffectView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         educationView.layer.cornerRadius = 20
+        educationImageView.layer.cornerRadius = 20
+        blur.layer.cornerRadius = 20
         selectionStyle = .none
     }
     

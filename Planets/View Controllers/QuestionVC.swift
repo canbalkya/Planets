@@ -17,8 +17,12 @@ class QuestionVC: UIViewController {
     @IBOutlet weak var thirdButton: UIButton!
     @IBOutlet weak var fourthButton: UIButton!
     
+    @IBOutlet weak var nextBarButtonItem: UIBarButtonItem!
+    
     var question = 1
-    var trueAnswer = 0
+    
+    var trueButton = UIButton()
+    var trueOpen = Bool()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,102 +31,244 @@ class QuestionVC: UIViewController {
         thirdButton.layer.cornerRadius = 10
         fourthButton.layer.cornerRadius = 10
         
-        switch question {
-        case 1:
-            questionLabel.text = "\(firstQuestion.count)."
-            questionTextView.text = "\(firstQuestion.question)"
-
-            firstButton.setTitle("\(firstQuestion.answers[0])", for: .normal)
-            secondButton.setTitle("\(firstQuestion.answers[1])", for: .normal)
-            thirdButton.setTitle("\(firstQuestion.answers[2])", for: .normal)
-            fourthButton.setTitle("\(firstQuestion.answers[3])", for: .normal)
-
-        case 2:
-            questionLabel.text = "\(firstQuestion.count)."
-            questionTextView.text = "\(firstQuestion.question)"
-
-            firstButton.setTitle("\(firstQuestion.answers[0])", for: .normal)
-            secondButton.setTitle("\(firstQuestion.answers[1])", for: .normal)
-            thirdButton.setTitle("\(firstQuestion.answers[2])", for: .normal)
-            fourthButton.setTitle("\(firstQuestion.answers[3])", for: .normal)
-
-        case 3:
-            questionLabel.text = "\(firstQuestion.count)."
-            questionTextView.text = "\(firstQuestion.question)"
-
-            firstButton.setTitle("\(firstQuestion.answers[0])", for: .normal)
-            secondButton.setTitle("\(firstQuestion.answers[1])", for: .normal)
-            thirdButton.setTitle("\(firstQuestion.answers[2])", for: .normal)
-            fourthButton.setTitle("\(firstQuestion.answers[3])", for: .normal)
-
-        case 4:
-            questionLabel.text = "\(firstQuestion.count)."
-            questionTextView.text = "\(firstQuestion.question)"
-
-            firstButton.setTitle("\(firstQuestion.answers[0])", for: .normal)
-            secondButton.setTitle("\(firstQuestion.answers[1])", for: .normal)
-            thirdButton.setTitle("\(firstQuestion.answers[2])", for: .normal)
-            fourthButton.setTitle("\(firstQuestion.answers[3])", for: .normal)
-
-        case 5:
-            questionLabel.text = "\(firstQuestion.count)."
-            questionTextView.text = "\(firstQuestion.question)"
-
-            firstButton.setTitle("\(firstQuestion.answers[0])", for: .normal)
-            secondButton.setTitle("\(firstQuestion.answers[1])", for: .normal)
-            thirdButton.setTitle("\(firstQuestion.answers[2])", for: .normal)
-            fourthButton.setTitle("\(firstQuestion.answers[3])", for: .normal)
-
-        case 6:
-            questionLabel.text = "\(firstQuestion.count)."
-            questionTextView.text = "\(firstQuestion.question)"
-
-            firstButton.setTitle("\(firstQuestion.answers[0])", for: .normal)
-            secondButton.setTitle("\(firstQuestion.answers[1])", for: .normal)
-            thirdButton.setTitle("\(firstQuestion.answers[2])", for: .normal)
-            fourthButton.setTitle("\(firstQuestion.answers[3])", for: .normal)
-
-        case 7:
-            questionLabel.text = "\(firstQuestion.count)."
-            questionTextView.text = "\(firstQuestion.question)"
-
-            firstButton.setTitle("\(firstQuestion.answers[0])", for: .normal)
-            secondButton.setTitle("\(firstQuestion.answers[1])", for: .normal)
-            thirdButton.setTitle("\(firstQuestion.answers[2])", for: .normal)
-            fourthButton.setTitle("\(firstQuestion.answers[3])", for: .normal)
-
-        case 8:
-            questionLabel.text = "\(firstQuestion.count)."
-            questionTextView.text = "\(firstQuestion.question)"
-
-            firstButton.setTitle("\(firstQuestion.answers[0])", for: .normal)
-            secondButton.setTitle("\(firstQuestion.answers[1])", for: .normal)
-            thirdButton.setTitle("\(firstQuestion.answers[2])", for: .normal)
-            fourthButton.setTitle("\(firstQuestion.answers[3])", for: .normal)
-
-        case 9:
-            questionLabel.text = "\(firstQuestion.count)."
-            questionTextView.text = "\(firstQuestion.question)"
-
-            firstButton.setTitle("\(firstQuestion.answers[0])", for: .normal)
-            secondButton.setTitle("\(firstQuestion.answers[1])", for: .normal)
-            thirdButton.setTitle("\(firstQuestion.answers[2])", for: .normal)
-            fourthButton.setTitle("\(firstQuestion.answers[3])", for: .normal)
-
-        case 10:
-            questionLabel.text = "\(firstQuestion.count)."
-            questionTextView.text = "\(firstQuestion.question)"
-
-            firstButton.setTitle("\(firstQuestion.answers[0])", for: .normal)
-            secondButton.setTitle("\(firstQuestion.answers[1])", for: .normal)
-            thirdButton.setTitle("\(firstQuestion.answers[2])", for: .normal)
-            fourthButton.setTitle("\(firstQuestion.answers[3])", for: .normal)
-        default:
-            fatalError("It's impossible!")
-        }
+        questionLabel.text = "\(question1.count)."
+        questionTextView.text = "\(question1.question)"
+        
+        firstButton.setTitle("\(question1.answers[0])", for: .normal)
+        secondButton.setTitle("\(question1.answers[1])", for: .normal)
+        thirdButton.setTitle("\(question1.answers[2])", for: .normal)
+        fourthButton.setTitle("\(question1.answers[3])", for: .normal)
     }
     
     @IBAction func checkAction(_ sender: UIBarButtonItem) {
+        if question == 1 {
+            questionLabel.text = "\(question1.count)."
+            questionTextView.text = "\(question1.question)"
+            
+            firstButton.setTitle("\(question1.answers[0])", for: .normal)
+            secondButton.setTitle("\(question1.answers[1])", for: .normal)
+            thirdButton.setTitle("\(question1.answers[2])", for: .normal)
+            fourthButton.setTitle("\(question1.answers[3])", for: .normal)
+            
+            trueButton = secondButton
+            trueOpen = secondOpen
+            
+            if secondOpen == true {
+                trueAnswer += 1
+                trueButton.backgroundColor = #colorLiteral(red: 0, green: 0.7703045685, blue: 0.1570926095, alpha: 1)
+                nextBarButtonItem.isEnabled = true
+            } else {
+                let alert = UIAlertController(title: "Alert", message: "You must choose a option!", preferredStyle: UIAlertController.Style.alert)
+                let okButoon = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
+                alert.addAction(okButoon)
+                self.present(alert, animated: true, completion: nil)
+            }
+        } else if question == 2 {
+            questionLabel.text = "\(question2.count)."
+            questionTextView.text = "\(question2.question)"
+            
+            firstButton.setTitle("\(question2.answers[0])", for: .normal)
+            secondButton.setTitle("\(question2.answers[1])", for: .normal)
+            thirdButton.setTitle("\(question2.answers[2])", for: .normal)
+            fourthButton.setTitle("\(question2.answers[3])", for: .normal)
+            
+            trueButton = thirdButton
+            trueOpen = thirdOpen
+            
+            if thirdOpen == true {
+                trueAnswer += 1
+                trueButton.backgroundColor = #colorLiteral(red: 0, green: 0.7703045685, blue: 0.1570926095, alpha: 1)
+                nextBarButtonItem.isEnabled = true
+            } else {
+                let alert = UIAlertController(title: "Alert", message: "You must choose a option!", preferredStyle: UIAlertController.Style.alert)
+                let okButoon = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
+                alert.addAction(okButoon)
+                self.present(alert, animated: true, completion: nil)
+            }
+        } else if question == 3 {
+            questionLabel.text = "\(question3.count)."
+            questionTextView.text = "\(question3.question)"
+            
+            firstButton.setTitle("\(question3.answers[0])", for: .normal)
+            secondButton.setTitle("\(question3.answers[1])", for: .normal)
+            thirdButton.setTitle("\(question3.answers[2])", for: .normal)
+            fourthButton.setTitle("\(question3.answers[3])", for: .normal)
+            
+            trueButton = firstButton
+            trueOpen = firstOpen
+            
+            if firstOpen == true {
+                trueAnswer += 1
+                trueButton.backgroundColor = #colorLiteral(red: 0, green: 0.7703045685, blue: 0.1570926095, alpha: 1)
+                nextBarButtonItem.isEnabled = true
+            } else {
+                let alert = UIAlertController(title: "Alert", message: "You must choose a option!", preferredStyle: UIAlertController.Style.alert)
+                let okButoon = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
+                alert.addAction(okButoon)
+                self.present(alert, animated: true, completion: nil)
+            }
+        } else if question == 4 {
+            questionLabel.text = "\(question4.count)."
+            questionTextView.text = "\(question4.question)"
+            
+            firstButton.setTitle("\(question4.answers[0])", for: .normal)
+            secondButton.setTitle("\(question4.answers[1])", for: .normal)
+            thirdButton.setTitle("\(question4.answers[2])", for: .normal)
+            fourthButton.setTitle("\(question4.answers[3])", for: .normal)
+            
+            trueButton = firstButton
+            trueOpen = firstOpen
+            
+            if firstOpen == true {
+                trueAnswer += 1
+                trueButton.backgroundColor = #colorLiteral(red: 0, green: 0.7703045685, blue: 0.1570926095, alpha: 1)
+                nextBarButtonItem.isEnabled = true
+            } else {
+                let alert = UIAlertController(title: "Alert", message: "You must choose a option!", preferredStyle: UIAlertController.Style.alert)
+                let okButoon = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
+                alert.addAction(okButoon)
+                self.present(alert, animated: true, completion: nil)
+            }
+        } else if question == 5 {
+            questionLabel.text = "\(question5.count)."
+            questionTextView.text = "\(question5.question)"
+            
+            firstButton.setTitle("\(question5.answers[0])", for: .normal)
+            secondButton.setTitle("\(question5.answers[1])", for: .normal)
+            thirdButton.setTitle("\(question5.answers[2])", for: .normal)
+            fourthButton.setTitle("\(question5.answers[3])", for: .normal)
+            
+            trueButton = firstButton
+            trueOpen = firstOpen
+            
+            if firstOpen == true {
+                trueAnswer += 1
+                trueButton.backgroundColor = #colorLiteral(red: 0, green: 0.7703045685, blue: 0.1570926095, alpha: 1)
+                nextBarButtonItem.isEnabled = true
+            } else {
+                let alert = UIAlertController(title: "Alert", message: "You must choose a option!", preferredStyle: UIAlertController.Style.alert)
+                let okButoon = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
+                alert.addAction(okButoon)
+                self.present(alert, animated: true, completion: nil)
+            }
+        } else if question == 6 {
+            questionLabel.text = "\(question6.count)."
+            questionTextView.text = "\(question6.question)"
+            
+            firstButton.setTitle("\(question6.answers[0])", for: .normal)
+            secondButton.setTitle("\(question6.answers[1])", for: .normal)
+            thirdButton.setTitle("\(question6.answers[2])", for: .normal)
+            fourthButton.setTitle("\(question6.answers[3])", for: .normal)
+            
+            trueButton = fourthButton
+            trueOpen = fourthOpen
+            
+            if fourthOpen == true {
+                trueAnswer += 1
+                trueButton.backgroundColor = #colorLiteral(red: 0, green: 0.7703045685, blue: 0.1570926095, alpha: 1)
+                nextBarButtonItem.isEnabled = true
+            } else {
+                let alert = UIAlertController(title: "Alert", message: "You must choose a option!", preferredStyle: UIAlertController.Style.alert)
+                let okButoon = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
+                alert.addAction(okButoon)
+                self.present(alert, animated: true, completion: nil)
+            }
+        } else if question == 7 {
+            questionLabel.text = "\(question7.count)."
+            questionTextView.text = "\(question7.question)"
+            
+            firstButton.setTitle("\(question7.answers[0])", for: .normal)
+            secondButton.setTitle("\(question7.answers[1])", for: .normal)
+            thirdButton.setTitle("\(question7.answers[2])", for: .normal)
+            fourthButton.setTitle("\(question7.answers[3])", for: .normal)
+            
+            trueButton = fourthButton
+            trueOpen = fourthOpen
+            
+            if fourthOpen == true {
+                trueAnswer += 1
+                trueButton.backgroundColor = #colorLiteral(red: 0, green: 0.7703045685, blue: 0.1570926095, alpha: 1)
+                nextBarButtonItem.isEnabled = true
+            } else {
+                let alert = UIAlertController(title: "Alert", message: "You must choose a option!", preferredStyle: UIAlertController.Style.alert)
+                let okButoon = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
+                alert.addAction(okButoon)
+                self.present(alert, animated: true, completion: nil)
+            }
+        } else if question == 8 {
+            questionLabel.text = "\(question8.count)."
+            questionTextView.text = "\(question8.question)"
+            
+            firstButton.setTitle("\(question8.answers[0])", for: .normal)
+            secondButton.setTitle("\(question8.answers[1])", for: .normal)
+            thirdButton.setTitle("\(question8.answers[2])", for: .normal)
+            fourthButton.setTitle("\(question8.answers[3])", for: .normal)
+            
+            trueButton = secondButton
+            trueOpen = secondOpen
+            
+            if secondOpen == true {
+                trueAnswer += 1
+                trueButton.backgroundColor = #colorLiteral(red: 0, green: 0.7703045685, blue: 0.1570926095, alpha: 1)
+                nextBarButtonItem.isEnabled = true
+            } else {
+                let alert = UIAlertController(title: "Alert", message: "You must choose a option!", preferredStyle: UIAlertController.Style.alert)
+                let okButoon = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
+                alert.addAction(okButoon)
+                self.present(alert, animated: true, completion: nil)
+            }
+        } else if question == 9 {
+            questionLabel.text = "\(question9.count)."
+            questionTextView.text = "\(question9.question)"
+            
+            firstButton.setTitle("\(question9.answers[0])", for: .normal)
+            secondButton.setTitle("\(question9.answers[1])", for: .normal)
+            thirdButton.setTitle("\(question9.answers[2])", for: .normal)
+            fourthButton.setTitle("\(question9.answers[3])", for: .normal)
+            
+            trueButton = secondButton
+            trueOpen = secondOpen
+            
+            if secondOpen == true {
+                trueAnswer += 1
+                trueButton.backgroundColor = #colorLiteral(red: 0, green: 0.7703045685, blue: 0.1570926095, alpha: 1)
+                nextBarButtonItem.isEnabled = true
+            } else {
+                let alert = UIAlertController(title: "Alert", message: "You must choose a option!", preferredStyle: UIAlertController.Style.alert)
+                let okButoon = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
+                alert.addAction(okButoon)
+                self.present(alert, animated: true, completion: nil)
+            }
+        } else if question == 10 {
+            questionLabel.text = "\(question10.count)."
+            questionTextView.text = "\(question10.question)"
+            
+            firstButton.setTitle("\(question10.answers[0])", for: .normal)
+            secondButton.setTitle("\(question10.answers[1])", for: .normal)
+            thirdButton.setTitle("\(question10.answers[2])", for: .normal)
+            fourthButton.setTitle("\(question10.answers[3])", for: .normal)
+            
+            trueButton = thirdButton
+            trueOpen = thirdOpen
+            
+            if thirdOpen == true {
+                trueButton.backgroundColor = #colorLiteral(red: 0, green: 0.7703045685, blue: 0.1570926095, alpha: 1)
+                nextBarButtonItem.isEnabled = true
+                trueAnswer += 1
+                performSegue(withIdentifier: "toResultVC", sender: nil)
+            } else {
+                let alert = UIAlertController(title: "Alert", message: "You must choose a option!", preferredStyle: UIAlertController.Style.alert)
+                let okButoon = UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler: nil)
+                alert.addAction(okButoon)
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+    }
+    
+    @IBAction func nextButton(_ sender: UIBarButtonItem) {
         question += 1
+        nextBarButtonItem.isEnabled = false
+        trueButton.backgroundColor = #colorLiteral(red: 0.09410236031, green: 0.09412645549, blue: 0.09410081059, alpha: 1)
+        trueOpen = false
     }
 }

@@ -23,6 +23,9 @@ class EducationVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CCell", for: indexPath) as? EducationTVCell
+        cell?.educationTitle.text = questionPart1.name
+        cell?.educationTextView.text = questionPart1.info
+        cell?.educationImageView.image = questionPart1.image
         return cell!
     }
     
