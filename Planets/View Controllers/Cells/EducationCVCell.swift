@@ -21,6 +21,7 @@ class EducationTVCell: UITableViewCell {
         educationView.layer.cornerRadius = 20
         educationImageView.layer.cornerRadius = 20
         blur.layer.cornerRadius = 20
+        blur.layer.masksToBounds = true
         educationImageView.contentMode = .scaleAspectFill
         selectionStyle = .none
     }
