@@ -48,6 +48,7 @@
 		3A8C08862280C2180074F8C6 /* Kepler186f.text in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C08852280C2180074F8C6 /* Kepler186f.text */; };
 		3ACD6336229D9DBE00F89DA0 /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACD6335229D9DBE00F89DA0 /* ResultVC.swift */; };
 		3ACD6338229D9DD400F89DA0 /* QuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACD6337229D9DD400F89DA0 /* QuestionVC.swift */; };
+		3AF2395F22AE65B600A96136 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2395E22AE65B600A96136 /* ProfileVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +95,7 @@
 		3A8C08852280C2180074F8C6 /* Kepler186f.text */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Kepler186f.text; sourceTree = "<group>"; };
 		3ACD6335229D9DBE00F89DA0 /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
 		3ACD6337229D9DD400F89DA0 /* QuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionVC.swift; sourceTree = "<group>"; };
+		3AF2395E22AE65B600A96136 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 				3A8C0819227768770074F8C6 /* SecondMainVC.swift */,
 				3ACD6337229D9DD400F89DA0 /* QuestionVC.swift */,
 				3ACD6335229D9DBE00F89DA0 /* ResultVC.swift */,
+				3AF2395E22AE65B600A96136 /* ProfileVC.swift */,
 				3A0AF77F229AE8F700569C51 /* Cells */,
 				3A791C7B22A6BA7600DCD2B8 /* Answer Buttons */,
 			);
@@ -327,6 +330,7 @@
 			files = (
 				3A0AF78D229AFA0500569C51 /* EducationCVCell.swift in Sources */,
 				3ACD6336229D9DBE00F89DA0 /* ResultVC.swift in Sources */,
+				3AF2395F22AE65B600A96136 /* ProfileVC.swift in Sources */,
 				3A791C7D22A6BB1A00DCD2B8 /* FirstAnswerButton.swift in Sources */,
 				3A013958211BA3ED003F8ACF /* FirstMainVC.swift in Sources */,
 				3A791C7F22A6BB2800DCD2B8 /* SecondAnswerButton.swift in Sources */,
