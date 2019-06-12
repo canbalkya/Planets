@@ -49,6 +49,7 @@
 		3ACD6336229D9DBE00F89DA0 /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACD6335229D9DBE00F89DA0 /* ResultVC.swift */; };
 		3ACD6338229D9DD400F89DA0 /* QuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACD6337229D9DD400F89DA0 /* QuestionVC.swift */; };
 		3AF2395F22AE65B600A96136 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2395E22AE65B600A96136 /* ProfileVC.swift */; };
+		3AF2396122B0DCA500A96136 /* EntryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2396022B0DCA500A96136 /* EntryVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		3ACD6335229D9DBE00F89DA0 /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
 		3ACD6337229D9DD400F89DA0 /* QuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionVC.swift; sourceTree = "<group>"; };
 		3AF2395E22AE65B600A96136 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		3AF2396022B0DCA500A96136 /* EntryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 		3A0AF77E229AE8DC00569C51 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3AF2396022B0DCA500A96136 /* EntryVC.swift */,
 				3A013957211BA3ED003F8ACF /* FirstMainVC.swift */,
 				3A01396E211C46A1003F8ACF /* InformationVC.swift */,
 				3A8C0819227768770074F8C6 /* SecondMainVC.swift */,
@@ -340,6 +343,7 @@
 				3A8C081A227768770074F8C6 /* SecondMainVC.swift in Sources */,
 				3A013956211BA3EC003F8ACF /* AppDelegate.swift in Sources */,
 				3A791C8122A6BB3300DCD2B8 /* ThirdAnswerButton.swift in Sources */,
+				3AF2396122B0DCA500A96136 /* EntryVC.swift in Sources */,
 				3ACD6338229D9DD400F89DA0 /* QuestionVC.swift in Sources */,
 				3A01396F211C46A1003F8ACF /* InformationVC.swift in Sources */,
 			);
