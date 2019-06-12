@@ -120,6 +120,13 @@ class FirstMainVC: UIViewController, UITableViewDataSource, UITableViewDelegate,
         myPlanets.append(kepler440B)
     }
     
+    @objc func showLoginController() {
+        let loginController = LoginController()
+        present(loginController, animated: true) {
+            
+        }
+    }
+    
 //    func numberOfSections(in tableView: UITableView) -> Int {
 //        if planets.count > 0 {
 //            tableView.backgroundView?.isHidden = true
