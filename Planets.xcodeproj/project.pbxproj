@@ -50,6 +50,7 @@
 		3ACD6338229D9DD400F89DA0 /* QuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACD6337229D9DD400F89DA0 /* QuestionVC.swift */; };
 		3AF2395F22AE65B600A96136 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2395E22AE65B600A96136 /* ProfileVC.swift */; };
 		3AF2396122B0DCA500A96136 /* EntryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2396022B0DCA500A96136 /* EntryVC.swift */; };
+		3AF2396322B0EE5500A96136 /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2396222B0EE5500A96136 /* EditVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		3ACD6337229D9DD400F89DA0 /* QuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionVC.swift; sourceTree = "<group>"; };
 		3AF2395E22AE65B600A96136 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		3AF2396022B0DCA500A96136 /* EntryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryVC.swift; sourceTree = "<group>"; };
+		3AF2396222B0EE5500A96136 /* EditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				3ACD6337229D9DD400F89DA0 /* QuestionVC.swift */,
 				3ACD6335229D9DBE00F89DA0 /* ResultVC.swift */,
 				3AF2395E22AE65B600A96136 /* ProfileVC.swift */,
+				3AF2396222B0EE5500A96136 /* EditVC.swift */,
 				3A0AF77F229AE8F700569C51 /* Cells */,
 				3A791C7B22A6BA7600DCD2B8 /* Answer Buttons */,
 			);
@@ -337,6 +340,7 @@
 				3A791C7D22A6BB1A00DCD2B8 /* FirstAnswerButton.swift in Sources */,
 				3A013958211BA3ED003F8ACF /* FirstMainVC.swift in Sources */,
 				3A791C7F22A6BB2800DCD2B8 /* SecondAnswerButton.swift in Sources */,
+				3AF2396322B0EE5500A96136 /* EditVC.swift in Sources */,
 				3A013974211C4DE9003F8ACF /* File.swift in Sources */,
 				3A791C8322A6BB3E00DCD2B8 /* FourthAnswerButton.swift in Sources */,
 				3A59A13421318B6500509741 /* IntroductionCell.swift in Sources */,

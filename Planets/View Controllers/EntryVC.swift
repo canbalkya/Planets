@@ -9,8 +9,20 @@
 import UIKit
 
 class EntryVC: UIViewController {
-
+    @IBOutlet weak var username: UITextField!
+    @IBOutlet weak var name: UITextField!
+    @IBOutlet weak var surname: UITextField!
+    
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
+    
+    @IBOutlet weak var entryButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        entryButton.layer.cornerRadius = 20
+    }
+    
+    @IBAction func entryTapped(_ sender: UIButton) {
     }
 }

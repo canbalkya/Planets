@@ -9,7 +9,18 @@
 import UIKit
 
 class ProfileVC: UIViewController {
+    @IBOutlet weak var profileImageView: UIImageView!
+    
+    @IBOutlet weak var profileUsername: UILabel!
+    @IBOutlet weak var profileName: UILabel!
+    @IBOutlet weak var profileSurname: UILabel!
+    
+    @IBOutlet weak var profileEmail: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    @IBAction func editTapped(_ sender: UIBarButtonItem) {
     }
 }
