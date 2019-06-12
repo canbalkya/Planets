@@ -203,7 +203,7 @@
                                 <color key="backgroundColor" red="0.094102360309999994" green="0.094126455489999997" blue="0.09410081059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" keyboardAppearance="alert"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                         <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -280,7 +280,7 @@
                         <outlet property="password" destination="8j4-bM-pFA" id="gTo-Ks-YPF"/>
                         <outlet property="surname" destination="g5z-X8-1Cv" id="bjH-Dr-Tud"/>
                         <outlet property="username" destination="UYd-e8-LhR" id="I1M-Ks-a6a"/>
-                        <segue destination="cyy-US-fU0" kind="show" id="cWb-nB-3Xe"/>
+                        <segue destination="cyy-US-fU0" kind="show" identifier="toFirstMainVC" id="cWb-nB-3Xe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vqR-Mh-w8o" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -427,9 +427,14 @@
                         <viewLayoutGuide key="safeArea" id="r6a-JK-cdC"/>
                     </view>
                     <navigationItem key="navigationItem" title="Education" id="tdH-85-fi8">
-                        <barButtonItem key="rightBarButtonItem" image="Account Item Button" style="done" id="4tV-Dc-BbH">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="Account Item Button" id="BDp-in-9Ok">
                             <connections>
-                                <segue destination="9vI-PB-0tK" kind="show" id="FW4-4i-uSB"/>
+                                <segue destination="9vI-PB-0tK" kind="show" id="7M3-5T-1sr"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="L. B." id="xkr-dv-xVM">
+                            <connections>
+                                <segue destination="hFe-br-dje" kind="show" id="xI6-Vi-hOW"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -494,8 +499,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="editImageView" destination="RmA-up-71D" id="kmd-cy-rXw"/>
                         <outlet property="profileEmail" destination="2gL-bC-bhN" id="RgG-HV-8HR"/>
+                        <outlet property="profileImageView" destination="RmA-up-71D" id="tHb-Dc-Icz"/>
                         <outlet property="profileName" destination="xkR-y1-VHk" id="b3f-g6-bSh"/>
                         <outlet property="profileSurname" destination="hOu-PI-tRJ" id="ZmI-5m-Pe5"/>
                         <outlet property="profileUsername" destination="TDN-zf-TXR" id="t36-TD-Y1V"/>
@@ -503,7 +508,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wcG-5A-yzq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2836" y="1611.5442278860571"/>
+            <point key="canvasLocation" x="2836" y="1327"/>
         </scene>
         <!--EditVC-->
         <scene sceneID="DOY-Fz-te3">
@@ -530,7 +535,7 @@
                                 <color key="backgroundColor" red="0.094102360309999994" green="0.094126455489999997" blue="0.09410081059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                         <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -543,7 +548,7 @@
                                 <color key="backgroundColor" red="0.094102360309999994" green="0.094126455489999997" blue="0.09410081059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                         <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -556,7 +561,7 @@
                                 <color key="backgroundColor" red="0.094102360309999994" green="0.094126455489999997" blue="0.09410081059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                         <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -569,7 +574,7 @@
                                 <color key="backgroundColor" red="0.094102360309999994" green="0.094126455489999997" blue="0.09410081059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" keyboardAppearance="alert"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                         <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -582,7 +587,7 @@
                                 <color key="backgroundColor" red="0.094102360309999994" green="0.094126455489999997" blue="0.09410081059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
                                         <color key="value" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -627,7 +632,60 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YcC-w2-fsA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3616.8000000000002" y="1611.5442278860571"/>
+            <point key="canvasLocation" x="3617" y="1327"/>
+        </scene>
+        <!--Leader Board-->
+        <scene sceneID="3ix-ZP-l06">
+            <objects>
+                <viewController id="hFe-br-dje" customClass="LeaderBoardVC" customModule="Planets" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oag-R8-Peo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RDC-MW-Ag4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="IRO-hb-SXi">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IRO-hb-SXi" id="vKs-Ad-Taq">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="RDC-MW-Ag4" firstAttribute="bottom" secondItem="FAY-jN-NRr" secondAttribute="bottom" id="ESs-l6-V2R"/>
+                            <constraint firstItem="RDC-MW-Ag4" firstAttribute="trailing" secondItem="FAY-jN-NRr" secondAttribute="trailing" id="Fc2-SC-Jky"/>
+                            <constraint firstItem="RDC-MW-Ag4" firstAttribute="leading" secondItem="FAY-jN-NRr" secondAttribute="leading" id="W1i-Yq-vNL"/>
+                            <constraint firstItem="RDC-MW-Ag4" firstAttribute="top" secondItem="FAY-jN-NRr" secondAttribute="top" id="caX-9d-J6o"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FAY-jN-NRr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Leader Board" largeTitleDisplayMode="never" id="d8g-yT-5iX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gyx-EM-tfo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2836" y="2023.5382308845578"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qLA-Ve-DJf">
+            <objects>
+                <viewController id="q2m-JW-a2P" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="beY-w3-6uZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="NM8-6J-fe3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q3l-5U-QVs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3617" y="2024"/>
         </scene>
         <!--Unit-->
         <scene sceneID="6Tq-J7-Ppw">
@@ -875,6 +933,6 @@
         <image name="planet" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4Ep-QS-dgx"/>
+        <segue reference="cWb-nB-3Xe"/>
     </inferredMetricsTieBreakers>
 </document>

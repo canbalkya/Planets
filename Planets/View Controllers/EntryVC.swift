@@ -24,5 +24,6 @@ class EntryVC: UIViewController {
     }
     
     @IBAction func entryTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "toFirstMainVC", sender: nil)
     }
 }
