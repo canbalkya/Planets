@@ -121,7 +121,7 @@ class FirstMainVC: UIViewController, UITableViewDataSource, UITableViewDelegate,
     }
     
     @objc func showLoginController() {
-        let loginController = LoginController()
+        let loginController = CreateAccount()
         present(loginController, animated: true) {
             
         }

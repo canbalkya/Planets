@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginController: UIViewController {
+class CreateAccount: UIViewController {
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var surname: UITextField!
@@ -31,7 +31,7 @@ class LoginController: UIViewController {
     }
     
     @IBAction func entryTapped(_ sender: UIButton) {
-        if username.text == "test" && name.text == "test" && surname.text == "test" && email.text == "test" && password.text == "test" {
+        if username.text == "test" {
             UserDefaults.standard.set(true, forKey: "ISUSERLOGGEDIN")
             let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC") as! FirstMainVC
             self.navigationController?.pushViewController(homeVC, animated: true)
@@ -54,7 +54,7 @@ class LoginController: UIViewController {
         toolBar.barTintColor = .black
         toolBar.tintColor = .white
         
-        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(LoginController.dismissKeyboard))
+        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(CreateAccount.dismissKeyboard))
         
         toolBar.setItems([doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
