@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PSK-lK-Ll7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VUU-ht-3F8">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -311,7 +311,7 @@
         <!--Education-->
         <scene sceneID="tfX-6i-BHh">
             <objects>
-                <viewController id="Kvq-Dv-SoB" customClass="EducationVC" customModule="Planets" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Kvq-Dv-SoB" customClass="SecondMainVC" customModule="Planets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0j2-pB-hDh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -651,9 +651,9 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RDC-MW-Ag4">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="70" id="IRO-hb-SXi">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LeaderBoardCell" rowHeight="70" id="IRO-hb-SXi" customClass="LeaderBoardCell" customModule="Planets" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IRO-hb-SXi" id="vKs-Ad-Taq">
@@ -689,6 +689,10 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
+                                            <outlet property="countLabel" destination="Sjl-cW-MPl" id="nVb-Xc-W9D"/>
+                                            <outlet property="nameLabel" destination="DKP-Xk-NBh" id="Yxx-vJ-bZz"/>
+                                            <outlet property="pointLabel" destination="S71-Qy-wvZ" id="lxb-Bh-mrt"/>
+                                            <outlet property="profileImage" destination="RDY-pc-RHa" id="RhJ-ix-xsa"/>
                                             <segue destination="q2m-JW-a2P" kind="show" id="uqd-W0-HAw"/>
                                         </connections>
                                     </tableViewCell>
@@ -705,15 +709,18 @@
                         <viewLayoutGuide key="safeArea" id="FAY-jN-NRr"/>
                     </view>
                     <navigationItem key="navigationItem" title="Leader Board" largeTitleDisplayMode="never" id="d8g-yT-5iX"/>
+                    <connections>
+                        <outlet property="tableView" destination="RDC-MW-Ag4" id="S7s-4Z-Bce"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gyx-EM-tfo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2836" y="2023.5382308845578"/>
         </scene>
-        <!--View Controller-->
+        <!--PersonVC-->
         <scene sceneID="qLA-Ve-DJf">
             <objects>
-                <viewController id="q2m-JW-a2P" sceneMemberID="viewController">
+                <viewController id="q2m-JW-a2P" customClass="PersonVC" customModule="Planets" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="beY-w3-6uZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -761,6 +768,7 @@
                                 <connections>
                                     <action selector="entryTapped:" destination="ZCQ-8r-1nD" eventType="touchUpInside" id="ppU-8w-U3y"/>
                                     <action selector="firstTapped:" destination="im5-H1-55H" eventType="touchUpInside" id="5M1-F5-22W"/>
+                                    <action selector="followTapped:" destination="q2m-JW-a2P" eventType="touchUpInside" id="3oJ-W9-ORt"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Followers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtS-hR-hwh">
@@ -774,6 +782,14 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="NM8-6J-fe3"/>
                     </view>
+                    <connections>
+                        <outlet property="followButton" destination="mHI-ey-GNL" id="vUy-WG-xkm"/>
+                        <outlet property="personEmailLabel" destination="AZB-h2-Qdb" id="Ih1-uj-bq0"/>
+                        <outlet property="personFollowesLabel" destination="TtS-hR-hwh" id="iPo-EA-VhE"/>
+                        <outlet property="personNameLabel" destination="bOS-GR-hpL" id="ciZ-gt-Mru"/>
+                        <outlet property="personSurnameLabel" destination="A32-lo-Nsn" id="Wb8-Ai-A5E"/>
+                        <outlet property="personUserNameLabel" destination="Iat-OQ-sGC" id="QXo-LW-7PI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q3l-5U-QVs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1027,12 +1043,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
-                        <segue destination="VUU-ht-3F8" kind="relationship" relationship="rootViewController" id="V0W-tF-oB1"/>
+                        <segue destination="VUU-ht-3F8" kind="relationship" relationship="rootViewController" id="8U6-nr-coy"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uVR-3d-6z8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2369" y="45"/>
+            <point key="canvasLocation" x="-2335" y="45"/>
         </scene>
         <!--OptionVC-->
         <scene sceneID="TSs-wS-jMJ">
@@ -1051,7 +1067,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="ZCQ-8r-1nD" kind="show" id="cVC-YL-Nxz"/>
+                                    <segue destination="ZCQ-8r-1nD" kind="showDetail" id="cVC-YL-Nxz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ynN-Yg-cXw">
@@ -1063,7 +1079,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dkJ-3U-23d" kind="show" id="oN0-MX-EbJ"/>
+                                    <segue destination="dkJ-3U-23d" kind="showDetail" id="oN0-MX-EbJ"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSl-CD-f8U">
@@ -1118,7 +1134,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="entryTapped:" destination="dkJ-3U-23d" eventType="touchUpInside" id="3dx-YQ-td9"/>
                                     <action selector="firstTapped:" destination="im5-H1-55H" eventType="touchUpInside" id="ZuV-UQ-Cz4"/>
                                     <action selector="loginTapped:" destination="dkJ-3U-23d" eventType="touchUpInside" id="8en-Rv-Ssr"/>
                                 </connections>
@@ -1158,11 +1173,8 @@
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="qLd-Yd-Cx1"/>
                     <connections>
-                        <outlet property="email" destination="4cO-wr-U2B" id="Hch-Fp-Cwr"/>
                         <outlet property="emailTextField" destination="4cO-wr-U2B" id="CHg-kF-u90"/>
-                        <outlet property="entryButton" destination="H2d-or-TN5" id="UdB-UT-ThT"/>
                         <outlet property="loginButton" destination="H2d-or-TN5" id="IPx-e8-xL5"/>
-                        <outlet property="password" destination="c9R-Qv-zxi" id="h6N-1u-9Yi"/>
                         <outlet property="passwordTextField" destination="c9R-Qv-zxi" id="mL0-o6-59d"/>
                         <segue destination="cyy-US-fU0" kind="show" id="zUj-jU-wCi"/>
                     </connections>
@@ -1181,6 +1193,6 @@
         <image name="planet" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zUj-jU-wCi"/>
+        <segue reference="cWb-nB-3Xe"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -33,6 +33,8 @@
 		3A0DD15322529DB3009CB423 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3A0DD15222529DB3009CB423 /* README.md */; };
 		3A48FE4222B23CBC002B3651 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A48FE4122B23CBC002B3651 /* LoginVC.swift */; };
 		3A48FE4422B23E75002B3651 /* OptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A48FE4322B23E75002B3651 /* OptionVC.swift */; };
+		3A48FE4A22B3DF72002B3651 /* LeaderBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A48FE4922B3DF72002B3651 /* LeaderBoardCell.swift */; };
+		3A48FE4C22B3E13A002B3651 /* PersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A48FE4B22B3E13A002B3651 /* PersonVC.swift */; };
 		3A59A13421318B6500509741 /* IntroductionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A59A13321318B6500509741 /* IntroductionCell.swift */; };
 		3A766CF9226F8BC4001D549D /* World.text in Resources */ = {isa = PBXBuildFile; fileRef = 3A766CF8226F8BC4001D549D /* World.text */; };
 		3A766CFB226F8C05001D549D /* Mars.text in Resources */ = {isa = PBXBuildFile; fileRef = 3A766CFA226F8C05001D549D /* Mars.text */; };
@@ -85,6 +87,8 @@
 		3A0DD15222529DB3009CB423 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3A48FE4122B23CBC002B3651 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		3A48FE4322B23E75002B3651 /* OptionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionVC.swift; sourceTree = "<group>"; };
+		3A48FE4922B3DF72002B3651 /* LeaderBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardCell.swift; sourceTree = "<group>"; };
+		3A48FE4B22B3E13A002B3651 /* PersonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonVC.swift; sourceTree = "<group>"; };
 		3A59A13321318B6500509741 /* IntroductionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroductionCell.swift; sourceTree = "<group>"; };
 		3A766CF8226F8BC4001D549D /* World.text */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = World.text; sourceTree = "<group>"; };
 		3A766CFA226F8C05001D549D /* Mars.text */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Mars.text; sourceTree = "<group>"; };
@@ -163,6 +167,7 @@
 				3AF2395E22AE65B600A96136 /* ProfileVC.swift */,
 				3AF2396222B0EE5500A96136 /* EditVC.swift */,
 				3AF2396422B0FC1800A96136 /* LeaderBoardVC.swift */,
+				3A48FE4B22B3E13A002B3651 /* PersonVC.swift */,
 				3A0AF77F229AE8F700569C51 /* Cells */,
 				3A791C7B22A6BA7600DCD2B8 /* Answer Buttons */,
 			);
@@ -174,6 +179,7 @@
 			children = (
 				3A59A13321318B6500509741 /* IntroductionCell.swift */,
 				3A0AF78C229AFA0500569C51 /* EducationCVCell.swift */,
+				3A48FE4922B3DF72002B3651 /* LeaderBoardCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -348,11 +354,13 @@
 				3AF2395F22AE65B600A96136 /* ProfileVC.swift in Sources */,
 				3AF2396522B0FC1800A96136 /* LeaderBoardVC.swift in Sources */,
 				3A791C7D22A6BB1A00DCD2B8 /* FirstAnswerButton.swift in Sources */,
+				3A48FE4A22B3DF72002B3651 /* LeaderBoardCell.swift in Sources */,
 				3A013958211BA3ED003F8ACF /* FirstMainVC.swift in Sources */,
 				3A791C7F22A6BB2800DCD2B8 /* SecondAnswerButton.swift in Sources */,
 				3AF2396322B0EE5500A96136 /* EditVC.swift in Sources */,
 				3A013974211C4DE9003F8ACF /* File.swift in Sources */,
 				3A791C8322A6BB3E00DCD2B8 /* FourthAnswerButton.swift in Sources */,
+				3A48FE4C22B3E13A002B3651 /* PersonVC.swift in Sources */,
 				3A59A13421318B6500509741 /* IntroductionCell.swift in Sources */,
 				3A8C081A227768770074F8C6 /* SecondMainVC.swift in Sources */,
 				3A013956211BA3EC003F8ACF /* AppDelegate.swift in Sources */,

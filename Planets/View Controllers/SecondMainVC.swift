@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EducationVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SecondMainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var tableView: UITableView!
     
     let educations = cases
