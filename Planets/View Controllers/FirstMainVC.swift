@@ -33,6 +33,8 @@ class FirstMainVC: UIViewController, UITableViewDataSource, UITableViewDelegate,
         if let filepath = Bundle.main.path(forResource: "Kepler186f", ofType: "text") { kepler186FInfo = try! String(contentsOfFile: filepath) }
         if let filepath = Bundle.main.path(forResource: "Kepler296e", ofType: "text") { kepler296EInfo = try! String(contentsOfFile: filepath) }
         if let filepath = Bundle.main.path(forResource: "Kepler440b", ofType: "text") { kepler440BInfo = try! String(contentsOfFile: filepath) }
+        if let filepath = Bundle.main.path(forResource: "Kepler442b", ofType: "text") { kepler442BInfo = try! String(contentsOfFile: filepath) }
+        if let filepath = Bundle.main.path(forResource: "Kepler10b", ofType: "text") { kepler10BInfo = try! String(contentsOfFile: filepath) }
         
         let mercury = Planets()
         mercury.name = "Mercury"
@@ -105,6 +107,18 @@ class FirstMainVC: UIViewController, UITableViewDataSource, UITableViewDelegate,
         planetsName.append(kepler440B.name)
         kepler440B.information = kepler440BInfo
         kepler440B.image = UIImage(named: "Kepler440b.jpg")!
+        
+        let kepler442B = Planets()
+        kepler442B.name = "Kepler-442b"
+        planetsName.append(kepler442B.name)
+        kepler442B.information = kepler442BInfo
+        kepler442B.image = UIImage(named: "Kepler442b.jpg")!
+
+        let kepler10B = Planets()
+        kepler10B.name = "Kepler-10b"
+        planetsName.append(kepler10B.name)
+        kepler10B.information = kepler10BInfo
+        kepler10B.image = UIImage(named: "Kepler10b.jpg")!
     
         myPlanets.append(mercury)
         myPlanets.append(venus)
@@ -118,12 +132,14 @@ class FirstMainVC: UIViewController, UITableViewDataSource, UITableViewDelegate,
         myPlanets.append(kepler186F)
         myPlanets.append(kepler296E)
         myPlanets.append(kepler440B)
+        myPlanets.append(kepler442B)
+        myPlanets.append(kepler10B)
     }
     
     @objc func showLoginController() {
         let loginController = CreateAccount()
         present(loginController, animated: true) {
-            
+    
         }
     }
     
