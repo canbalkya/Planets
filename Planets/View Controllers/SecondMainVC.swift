@@ -9,8 +9,6 @@
 import UIKit
 
 class SecondMainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    @IBOutlet var tableView: UITableView!
-    
     let educations = cases
     
     override func viewDidLoad() {
@@ -23,9 +21,9 @@ class SecondMainVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CCell", for: indexPath) as? EducationTVCell
-        cell?.educationTitle.text = questionPart1.name
-        cell?.educationTextView.text = questionPart1.info
-        cell?.educationImageView.image = questionPart1.image
+        cell?.educationTitle.text = titles[indexPath.row]
+        cell?.educationTextView.text = infos[indexPath.row]
+        cell?.educationImageView.image = images[indexPath.row]
         return cell!
     }
     

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VUU-ht-3F8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cyy-US-fU0">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -439,9 +439,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="tableView" destination="QUT-FE-QZh" id="TDj-C5-BwM"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zcC-9Q-NJD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1193,6 +1190,6 @@
         <image name="planet" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cWb-nB-3Xe"/>
+        <segue reference="4Ep-QS-dgx"/>
     </inferredMetricsTieBreakers>
 </document>

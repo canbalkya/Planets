@@ -31,13 +31,13 @@ class QuestionVC: UIViewController {
         thirdButton.layer.cornerRadius = 10
         fourthButton.layer.cornerRadius = 10
         
-        questionLabel.text = "\(question1.count)."
-        questionTextView.text = "\(question1.question)"
+        questionLabel.text = "\(question1SS.count)."
+        questionTextView.text = "\(question1SS.question)"
         
-        firstButton.setTitle("\(question1.answers[0])", for: .normal)
-        secondButton.setTitle("\(question1.answers[1])", for: .normal)
-        thirdButton.setTitle("\(question1.answers[2])", for: .normal)
-        fourthButton.setTitle("\(question1.answers[3])", for: .normal)
+        firstButton.setTitle("\(question1SS.answers[0])", for: .normal)
+        secondButton.setTitle("\(question1SS.answers[1])", for: .normal)
+        thirdButton.setTitle("\(question1SS.answers[2])", for: .normal)
+        fourthButton.setTitle("\(question1SS.answers[3])", for: .normal)
     }
     
     @IBAction func checkAction(_ sender: UIBarButtonItem) {
@@ -231,85 +231,85 @@ class QuestionVC: UIViewController {
         trueOpen = false
         
         if question == 1 {
-            questionLabel.text = "\(question1.count)."
-            questionTextView.text = "\(question1.question)"
+            questionLabel.text = "\(question1SS.count)."
+            questionTextView.text = "\(question1SS.question)"
             
-            firstButton.setTitle("\(question1.answers[0])", for: .normal)
-            secondButton.setTitle("\(question1.answers[1])", for: .normal)
-            thirdButton.setTitle("\(question1.answers[2])", for: .normal)
-            fourthButton.setTitle("\(question1.answers[3])", for: .normal)
+            firstButton.setTitle("\(question1SS.answers[0])", for: .normal)
+            secondButton.setTitle("\(question1SS.answers[1])", for: .normal)
+            thirdButton.setTitle("\(question1SS.answers[2])", for: .normal)
+            fourthButton.setTitle("\(question1SS.answers[3])", for: .normal)
         } else if question == 2 {
-            questionLabel.text = "\(question2.count)."
-            questionTextView.text = "\(question2.question)"
+            questionLabel.text = "\(question2SS.count)."
+            questionTextView.text = "\(question2SS.question)"
             
-            firstButton.setTitle("\(question2.answers[0])", for: .normal)
-            secondButton.setTitle("\(question2.answers[1])", for: .normal)
-            thirdButton.setTitle("\(question2.answers[2])", for: .normal)
-            fourthButton.setTitle("\(question2.answers[3])", for: .normal)
+            firstButton.setTitle("\(question2SS.answers[0])", for: .normal)
+            secondButton.setTitle("\(question2SS.answers[1])", for: .normal)
+            thirdButton.setTitle("\(question2SS.answers[2])", for: .normal)
+            fourthButton.setTitle("\(question2SS.answers[3])", for: .normal)
         } else if question == 3 {
-            questionLabel.text = "\(question3.count)."
-            questionTextView.text = "\(question3.question)"
+            questionLabel.text = "\(question3SS.count)."
+            questionTextView.text = "\(question3SS.question)"
             
-            firstButton.setTitle("\(question3.answers[0])", for: .normal)
-            secondButton.setTitle("\(question3.answers[1])", for: .normal)
-            thirdButton.setTitle("\(question3.answers[2])", for: .normal)
-            fourthButton.setTitle("\(question3.answers[3])", for: .normal)
+            firstButton.setTitle("\(question3SS.answers[0])", for: .normal)
+            secondButton.setTitle("\(question3SS.answers[1])", for: .normal)
+            thirdButton.setTitle("\(question3SS.answers[2])", for: .normal)
+            fourthButton.setTitle("\(question3SS.answers[3])", for: .normal)
         } else if question == 4 {
-            questionLabel.text = "\(question4.count)."
-            questionTextView.text = "\(question4.question)"
+            questionLabel.text = "\(question4SS.count)."
+            questionTextView.text = "\(question4SS.question)"
             
-            firstButton.setTitle("\(question4.answers[0])", for: .normal)
-            secondButton.setTitle("\(question4.answers[1])", for: .normal)
-            thirdButton.setTitle("\(question4.answers[2])", for: .normal)
-            fourthButton.setTitle("\(question4.answers[3])", for: .normal)
+            firstButton.setTitle("\(question4SS.answers[0])", for: .normal)
+            secondButton.setTitle("\(question4SS.answers[1])", for: .normal)
+            thirdButton.setTitle("\(question4SS.answers[2])", for: .normal)
+            fourthButton.setTitle("\(question4SS.answers[3])", for: .normal)
         } else if question == 5 {
-            questionLabel.text = "\(question5.count)."
-            questionTextView.text = "\(question5.question)"
+            questionLabel.text = "\(question5SS.count)."
+            questionTextView.text = "\(question5SS.question)"
             
-            firstButton.setTitle("\(question5.answers[0])", for: .normal)
-            secondButton.setTitle("\(question5.answers[1])", for: .normal)
-            thirdButton.setTitle("\(question5.answers[2])", for: .normal)
-            fourthButton.setTitle("\(question5.answers[3])", for: .normal)
+            firstButton.setTitle("\(question5SS.answers[0])", for: .normal)
+            secondButton.setTitle("\(question5SS.answers[1])", for: .normal)
+            thirdButton.setTitle("\(question5SS.answers[2])", for: .normal)
+            fourthButton.setTitle("\(question5SS.answers[3])", for: .normal)
         } else if question == 6 {
-            questionLabel.text = "\(question6.count)."
-            questionTextView.text = "\(question6.question)"
+            questionLabel.text = "\(question6SS.count)."
+            questionTextView.text = "\(question6SS.question)"
             
-            firstButton.setTitle("\(question6.answers[0])", for: .normal)
-            secondButton.setTitle("\(question6.answers[1])", for: .normal)
-            thirdButton.setTitle("\(question6.answers[2])", for: .normal)
-            fourthButton.setTitle("\(question6.answers[3])", for: .normal)
+            firstButton.setTitle("\(question6SS.answers[0])", for: .normal)
+            secondButton.setTitle("\(question6SS.answers[1])", for: .normal)
+            thirdButton.setTitle("\(question6SS.answers[2])", for: .normal)
+            fourthButton.setTitle("\(question6SS.answers[3])", for: .normal)
         } else if question == 7 {
-            questionLabel.text = "\(question7.count)."
-            questionTextView.text = "\(question7.question)"
+            questionLabel.text = "\(question7SS.count)."
+            questionTextView.text = "\(question7SS.question)"
             
-            firstButton.setTitle("\(question7.answers[0])", for: .normal)
-            secondButton.setTitle("\(question7.answers[1])", for: .normal)
-            thirdButton.setTitle("\(question7.answers[2])", for: .normal)
-            fourthButton.setTitle("\(question7.answers[3])", for: .normal)
+            firstButton.setTitle("\(question7SS.answers[0])", for: .normal)
+            secondButton.setTitle("\(question7SS.answers[1])", for: .normal)
+            thirdButton.setTitle("\(question7SS.answers[2])", for: .normal)
+            fourthButton.setTitle("\(question7SS.answers[3])", for: .normal)
         } else if question == 8 {
-            questionLabel.text = "\(question8.count)."
-            questionTextView.text = "\(question8.question)"
+            questionLabel.text = "\(question8SS.count)."
+            questionTextView.text = "\(question8SS.question)"
             
-            firstButton.setTitle("\(question8.answers[0])", for: .normal)
-            secondButton.setTitle("\(question8.answers[1])", for: .normal)
-            thirdButton.setTitle("\(question8.answers[2])", for: .normal)
-            fourthButton.setTitle("\(question8.answers[3])", for: .normal)
+            firstButton.setTitle("\(question8SS.answers[0])", for: .normal)
+            secondButton.setTitle("\(question8SS.answers[1])", for: .normal)
+            thirdButton.setTitle("\(question8SS.answers[2])", for: .normal)
+            fourthButton.setTitle("\(question8SS.answers[3])", for: .normal)
         } else if question == 9 {
-            questionLabel.text = "\(question9.count)."
-            questionTextView.text = "\(question9.question)"
+            questionLabel.text = "\(question9SS.count)."
+            questionTextView.text = "\(question9SS.question)"
             
-            firstButton.setTitle("\(question9.answers[0])", for: .normal)
-            secondButton.setTitle("\(question9.answers[1])", for: .normal)
-            thirdButton.setTitle("\(question9.answers[2])", for: .normal)
-            fourthButton.setTitle("\(question9.answers[3])", for: .normal)
+            firstButton.setTitle("\(question9SS.answers[0])", for: .normal)
+            secondButton.setTitle("\(question9SS.answers[1])", for: .normal)
+            thirdButton.setTitle("\(question9SS.answers[2])", for: .normal)
+            fourthButton.setTitle("\(question9SS.answers[3])", for: .normal)
         } else if question == 10 {
-            questionLabel.text = "\(question10.count)."
-            questionTextView.text = "\(question10.question)"
+            questionLabel.text = "\(question10SS.count)."
+            questionTextView.text = "\(question10SS.question)"
             
-            firstButton.setTitle("\(question10.answers[0])", for: .normal)
-            secondButton.setTitle("\(question10.answers[1])", for: .normal)
-            thirdButton.setTitle("\(question10.answers[2])", for: .normal)
-            fourthButton.setTitle("\(question10.answers[3])", for: .normal)
+            firstButton.setTitle("\(question10SS.answers[0])", for: .normal)
+            secondButton.setTitle("\(question10SS.answers[1])", for: .normal)
+            thirdButton.setTitle("\(question10SS.answers[2])", for: .normal)
+            fourthButton.setTitle("\(question10SS.answers[3])", for: .normal)
         } else if question == 11 {
             performSegue(withIdentifier: "toResultVC", sender: nil)
         }

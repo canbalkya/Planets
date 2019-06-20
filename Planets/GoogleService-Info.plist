@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>619645976142-u1ovuh7adal6unavj4lj2f0gnnktsgfo.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.619645976142-u1ovuh7adal6unavj4lj2f0gnnktsgfo</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDkqgVRGUcNvz1HfRNcoYPVlzJbz-chTlk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>619645976142</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>CanBalkaya.Planet</string>
+	<key>PROJECT_ID</key>
+	<string>planets-1af6a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>planets-1af6a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:619645976142:ios:b72a7492f8dcd039</string>
+	<key>DATABASE_URL</key>
+	<string>https://planets-1af6a.firebaseio.com</string>
+</dict>
+</plist>

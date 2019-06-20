@@ -42,6 +42,7 @@
 		3A791C7F22A6BB2800DCD2B8 /* SecondAnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A791C7E22A6BB2800DCD2B8 /* SecondAnswerButton.swift */; };
 		3A791C8122A6BB3300DCD2B8 /* ThirdAnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A791C8022A6BB3300DCD2B8 /* ThirdAnswerButton.swift */; };
 		3A791C8322A6BB3E00DCD2B8 /* FourthAnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A791C8222A6BB3E00DCD2B8 /* FourthAnswerButton.swift */; };
+		3A892CCD22B6D67B00953CA9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A892CCC22B6D67A00953CA9 /* GoogleService-Info.plist */; };
 		3A8C079E2270B69C0074F8C6 /* Venus.text in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C079D2270B69C0074F8C6 /* Venus.text */; };
 		3A8C07A02270B6B40074F8C6 /* Mercury.text in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C079F2270B6B40074F8C6 /* Mercury.text */; };
 		3A8C07EC22774CCB0074F8C6 /* Jupiter.text in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C07EB22774CCB0074F8C6 /* Jupiter.text */; };
@@ -96,6 +97,7 @@
 		3A791C7E22A6BB2800DCD2B8 /* SecondAnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondAnswerButton.swift; sourceTree = "<group>"; };
 		3A791C8022A6BB3300DCD2B8 /* ThirdAnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdAnswerButton.swift; sourceTree = "<group>"; };
 		3A791C8222A6BB3E00DCD2B8 /* FourthAnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthAnswerButton.swift; sourceTree = "<group>"; };
+		3A892CCC22B6D67A00953CA9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A8C079D2270B69C0074F8C6 /* Venus.text */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Venus.text; sourceTree = "<group>"; };
 		3A8C079F2270B6B40074F8C6 /* Mercury.text */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Mercury.text; sourceTree = "<group>"; };
 		3A8C07EB22774CCB0074F8C6 /* Jupiter.text */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Jupiter.text; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				3A0AF77E229AE8DC00569C51 /* View Controllers */,
 				3A0AF780229AE91E00569C51 /* Storyboards */,
 				3A013973211C4DE9003F8ACF /* File.swift */,
+				3A892CCC22B6D67A00953CA9 /* GoogleService-Info.plist */,
 				3A013961211BA3EE003F8ACF /* Info.plist */,
 				3A766CF6226F8B8F001D549D /* Sources */,
 			);
@@ -315,6 +318,7 @@
 				3A8C07F8227750030074F8C6 /* Neptune.text in Resources */,
 				3A0AF7A6229B024700569C51 /* Saturn.jpg in Resources */,
 				3A766CFB226F8C05001D549D /* Mars.text in Resources */,
+				3A892CCD22B6D67B00953CA9 /* GoogleService-Info.plist in Resources */,
 				3A0AF7A1229B024700569C51 /* World.jpg in Resources */,
 				3A8C07F622774F290074F8C6 /* Uranus.text in Resources */,
 				3A0DD15322529DB3009CB423 /* README.md in Resources */,
