@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class CreateAccount: UIViewController {
     @IBOutlet weak var username: UITextField!
@@ -23,26 +25,31 @@ class CreateAccount: UIViewController {
         createToolbar()
         
         entryButton.layer.cornerRadius = 20
-        
-        if UserDefaults.standard.bool(forKey: "ISUSERLOGGEDIN") == true {
-            let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC") as! FirstMainVC
-            self.navigationController?.pushViewController(homeVC, animated: false)
-        }
     }
     
     @IBAction func entryTapped(_ sender: UIButton) {
-        if username.text == "test" {
-            UserDefaults.standard.set(true, forKey: "ISUSERLOGGEDIN")
-            let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC") as! FirstMainVC
-            self.navigationController?.pushViewController(homeVC, animated: true)
-            
-            username.text = ""
-            name.text = ""
-            surname.text = ""
-            email.text = ""
-            password.text = ""
-            
-//            performSegue(withIdentifier: "toFirstMainVC", sender: nil)
+        if username.text != "" && name.text != "" && surname.text != "" && email.text != "" && password.text != "" {
+            Auth.auth().createUser(withEmail: email.text!, password: password.text!) { (userData, error) in
+                if error != nil {
+                    let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertController.Style.alert)
+                    let okButton = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+                    alert.addAction(okButton)
+                    self.present(alert, animated: true, completion: nil)
+                } else {
+                    UserDefaults.standard.set(userData!.user.email, forKey: "user")
+                    UserDefaults.standard.synchronize()
+
+                    let delegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
+                    delegate.rememberUser()
+                    
+                    self.performSegue(withIdentifier: "toFirstMainVC", sender: nil)
+                }
+            }
+        } else {
+            let alert = UIAlertController(title: "Error", message: "Username/Password is Empty!", preferredStyle: UIAlertController.Style.alert)
+            let okButton = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+            alert.addAction(okButton)
+            self.present(alert, animated: true, completion: nil)
         }
     }
     

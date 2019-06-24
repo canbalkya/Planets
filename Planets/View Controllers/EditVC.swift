@@ -29,7 +29,5 @@ class EditVC: UIViewController {
     }
     
     @IBAction func logOutTapped(_ sender: UIBarButtonItem) {
-        UserDefaults.standard.set(false, forKey: "ISUSERLOGGEDIN")
-        self.navigationController?.popToRootViewController(animated: true)
     }
 }

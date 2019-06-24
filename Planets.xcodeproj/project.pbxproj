@@ -35,7 +35,8 @@
 		3A0AF7AC229B025300569C51 /* Kepler16b.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A0AF7AB229B025200569C51 /* Kepler16b.jpg */; };
 		3A0AF7AE229B02B500569C51 /* Kepler16b.text in Resources */ = {isa = PBXBuildFile; fileRef = 3A0AF7AD229B02B500569C51 /* Kepler16b.text */; };
 		3A0DD15322529DB3009CB423 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3A0DD15222529DB3009CB423 /* README.md */; };
-		3A48FE4222B23CBC002B3651 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A48FE4122B23CBC002B3651 /* LoginVC.swift */; };
+		3A18FBD722C1388800DAF759 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A18FBD622C1388800DAF759 /* GoogleService-Info.plist */; };
+		3A48FE4222B23CBC002B3651 /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A48FE4122B23CBC002B3651 /* LogInVC.swift */; };
 		3A48FE4422B23E75002B3651 /* OptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A48FE4322B23E75002B3651 /* OptionVC.swift */; };
 		3A48FE4A22B3DF72002B3651 /* LeaderBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A48FE4922B3DF72002B3651 /* LeaderBoardCell.swift */; };
 		3A48FE4C22B3E13A002B3651 /* PersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A48FE4B22B3E13A002B3651 /* PersonVC.swift */; };
@@ -46,7 +47,6 @@
 		3A791C7F22A6BB2800DCD2B8 /* SecondAnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A791C7E22A6BB2800DCD2B8 /* SecondAnswerButton.swift */; };
 		3A791C8122A6BB3300DCD2B8 /* ThirdAnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A791C8022A6BB3300DCD2B8 /* ThirdAnswerButton.swift */; };
 		3A791C8322A6BB3E00DCD2B8 /* FourthAnswerButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A791C8222A6BB3E00DCD2B8 /* FourthAnswerButton.swift */; };
-		3A892CCD22B6D67B00953CA9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A892CCC22B6D67A00953CA9 /* GoogleService-Info.plist */; };
 		3A8C079E2270B69C0074F8C6 /* Venus.text in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C079D2270B69C0074F8C6 /* Venus.text */; };
 		3A8C07A02270B6B40074F8C6 /* Mercury.text in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C079F2270B6B40074F8C6 /* Mercury.text */; };
 		3A8C07EC22774CCB0074F8C6 /* Jupiter.text in Resources */ = {isa = PBXBuildFile; fileRef = 3A8C07EB22774CCB0074F8C6 /* Jupiter.text */; };
@@ -61,6 +61,7 @@
 		3AF2396122B0DCA500A96136 /* CreateAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2396022B0DCA500A96136 /* CreateAccount.swift */; };
 		3AF2396322B0EE5500A96136 /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2396222B0EE5500A96136 /* EditVC.swift */; };
 		3AF2396522B0FC1800A96136 /* LeaderBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF2396422B0FC1800A96136 /* LeaderBoardVC.swift */; };
+		AD334946A207B80C1AD55819 /* Pods_Planets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7469A662F8A9F9AD61B6B2FC /* Pods_Planets.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,7 +95,8 @@
 		3A0AF7AB229B025200569C51 /* Kepler16b.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kepler16b.jpg; sourceTree = "<group>"; };
 		3A0AF7AD229B02B500569C51 /* Kepler16b.text */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Kepler16b.text; sourceTree = "<group>"; };
 		3A0DD15222529DB3009CB423 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		3A48FE4122B23CBC002B3651 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		3A18FBD622C1388800DAF759 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3A48FE4122B23CBC002B3651 /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
 		3A48FE4322B23E75002B3651 /* OptionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionVC.swift; sourceTree = "<group>"; };
 		3A48FE4922B3DF72002B3651 /* LeaderBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardCell.swift; sourceTree = "<group>"; };
 		3A48FE4B22B3E13A002B3651 /* PersonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonVC.swift; sourceTree = "<group>"; };
@@ -105,7 +107,6 @@
 		3A791C7E22A6BB2800DCD2B8 /* SecondAnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondAnswerButton.swift; sourceTree = "<group>"; };
 		3A791C8022A6BB3300DCD2B8 /* ThirdAnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdAnswerButton.swift; sourceTree = "<group>"; };
 		3A791C8222A6BB3E00DCD2B8 /* FourthAnswerButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthAnswerButton.swift; sourceTree = "<group>"; };
-		3A892CCC22B6D67A00953CA9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3A8C079D2270B69C0074F8C6 /* Venus.text */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Venus.text; sourceTree = "<group>"; };
 		3A8C079F2270B6B40074F8C6 /* Mercury.text */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Mercury.text; sourceTree = "<group>"; };
 		3A8C07EB22774CCB0074F8C6 /* Jupiter.text */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Jupiter.text; sourceTree = "<group>"; };
@@ -120,6 +121,9 @@
 		3AF2396022B0DCA500A96136 /* CreateAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccount.swift; sourceTree = "<group>"; };
 		3AF2396222B0EE5500A96136 /* EditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVC.swift; sourceTree = "<group>"; };
 		3AF2396422B0FC1800A96136 /* LeaderBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardVC.swift; sourceTree = "<group>"; };
+		7469A662F8A9F9AD61B6B2FC /* Pods_Planets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Planets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D08353050177231E549AE998 /* Pods-Planets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Planets/Pods-Planets.debug.xcconfig"; sourceTree = "<group>"; };
+		F0E9EBE432BBB080E4F2EA8B /* Pods-Planets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Planets.release.xcconfig"; path = "Pods/Target Support Files/Pods-Planets/Pods-Planets.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD334946A207B80C1AD55819 /* Pods_Planets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +144,8 @@
 				3A013954211BA3EC003F8ACF /* Planets */,
 				3A013953211BA3EC003F8ACF /* Products */,
 				3A0DD15222529DB3009CB423 /* README.md */,
+				5F8BCC12B0A4E7731CD17AF1 /* Pods */,
+				CDA1EBB17355CFA9D28AE4DD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,8 +164,8 @@
 				3A0AF77E229AE8DC00569C51 /* View Controllers */,
 				3A0AF780229AE91E00569C51 /* Storyboards */,
 				3A013973211C4DE9003F8ACF /* File.swift */,
-				3A892CCC22B6D67A00953CA9 /* GoogleService-Info.plist */,
 				3A013961211BA3EE003F8ACF /* Info.plist */,
+				3A18FBD622C1388800DAF759 /* GoogleService-Info.plist */,
 				3A766CF6226F8B8F001D549D /* Sources */,
 			);
 			path = Planets;
@@ -169,7 +176,7 @@
 			children = (
 				3A48FE4322B23E75002B3651 /* OptionVC.swift */,
 				3AF2396022B0DCA500A96136 /* CreateAccount.swift */,
-				3A48FE4122B23CBC002B3651 /* LoginVC.swift */,
+				3A48FE4122B23CBC002B3651 /* LogInVC.swift */,
 				3A013957211BA3ED003F8ACF /* FirstMainVC.swift */,
 				3A01396E211C46A1003F8ACF /* InformationVC.swift */,
 				3A8C0819227768770074F8C6 /* SecondMainVC.swift */,
@@ -267,6 +274,23 @@
 			path = "Answer Buttons";
 			sourceTree = "<group>";
 		};
+		5F8BCC12B0A4E7731CD17AF1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D08353050177231E549AE998 /* Pods-Planets.debug.xcconfig */,
+				F0E9EBE432BBB080E4F2EA8B /* Pods-Planets.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CDA1EBB17355CFA9D28AE4DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7469A662F8A9F9AD61B6B2FC /* Pods_Planets.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -274,9 +298,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A013964211BA3EE003F8ACF /* Build configuration list for PBXNativeTarget "Planets" */;
 			buildPhases = (
+				220AF5B926FEFEF5DD4AC486 /* [CP] Check Pods Manifest.lock */,
 				3A01394E211BA3EC003F8ACF /* Sources */,
 				3A01394F211BA3EC003F8ACF /* Frameworks */,
 				3A013950211BA3EC003F8ACF /* Resources */,
+				BCEDEB0D19F2EBA65B06A57B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -332,9 +358,9 @@
 				3A04416022BC17AD007B9BBC /* Kepler10b.jpg in Resources */,
 				3A0AF7A6229B024700569C51 /* Saturn.jpg in Resources */,
 				3A766CFB226F8C05001D549D /* Mars.text in Resources */,
-				3A892CCD22B6D67B00953CA9 /* GoogleService-Info.plist in Resources */,
 				3A0AF7A1229B024700569C51 /* World.jpg in Resources */,
 				3A8C07F622774F290074F8C6 /* Uranus.text in Resources */,
+				3A18FBD722C1388800DAF759 /* GoogleService-Info.plist in Resources */,
 				3A0DD15322529DB3009CB423 /* README.md in Resources */,
 				3A0AF7A2229B024700569C51 /* Mars.jpg in Resources */,
 				3A0AF789229AF0F500569C51 /* Kepler440b.text in Resources */,
@@ -364,6 +390,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		220AF5B926FEFEF5DD4AC486 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Planets-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCEDEB0D19F2EBA65B06A57B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Planets/Pods-Planets-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Planets/Pods-Planets-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3A01394E211BA3EC003F8ACF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -386,7 +455,7 @@
 				3A013956211BA3EC003F8ACF /* AppDelegate.swift in Sources */,
 				3A791C8122A6BB3300DCD2B8 /* ThirdAnswerButton.swift in Sources */,
 				3A48FE4422B23E75002B3651 /* OptionVC.swift in Sources */,
-				3A48FE4222B23CBC002B3651 /* LoginVC.swift in Sources */,
+				3A48FE4222B23CBC002B3651 /* LogInVC.swift in Sources */,
 				3AF2396122B0DCA500A96136 /* CreateAccount.swift in Sources */,
 				3ACD6338229D9DD400F89DA0 /* QuestionVC.swift in Sources */,
 				3A01396F211C46A1003F8ACF /* InformationVC.swift in Sources */,
@@ -458,7 +527,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -512,7 +581,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -523,6 +592,7 @@
 		};
 		3A013965211BA3EE003F8ACF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D08353050177231E549AE998 /* Pods-Planets.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -541,6 +611,7 @@
 		};
 		3A013966211BA3EE003F8ACF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0E9EBE432BBB080E4F2EA8B /* Pods-Planets.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
