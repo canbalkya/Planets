@@ -26,10 +26,12 @@ class QuestionVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        firstButton.layer.cornerRadius = 10
-        secondButton.layer.cornerRadius = 10
-        thirdButton.layer.cornerRadius = 10
-        fourthButton.layer.cornerRadius = 10
+        
+        button()
+//        firstButton.layer.cornerRadius = 10
+//        secondButton.layer.cornerRadius = 10
+//        thirdButton.layer.cornerRadius = 10
+//        fourthButton.layer.cornerRadius = 10
         
         questionLabel.text = "\(question1SS.count)."
         questionTextView.text = "\(question1SS.question)"

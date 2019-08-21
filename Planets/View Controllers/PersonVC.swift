@@ -19,7 +19,9 @@ class PersonVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        followButton.layer.cornerRadius = 20
+        
+        button()
+//        followButton.layer.cornerRadius = 20
     }
     
     @IBAction func followTapped(_ sender: UIButton) {

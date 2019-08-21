@@ -14,7 +14,9 @@ class OptionVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        createButton.layer.cornerRadius = 20
-        loginButton.layer.cornerRadius = 20
+        
+        UIButton.appearance().layer.cornerRadius = 20
+//        createButton.layer.cornerRadius = 20
+//        loginButton.layer.cornerRadius = 20
     }
 }

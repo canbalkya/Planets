@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import FirebaseAnalytics
 
 class CreateAccount: UIViewController {
     @IBOutlet weak var username: UITextField!
@@ -24,7 +25,8 @@ class CreateAccount: UIViewController {
         super.viewDidLoad()
         createToolbar()
         
-        entryButton.layer.cornerRadius = 20
+        button()
+//        entryButton.layer.cornerRadius = 20
     }
     
     @IBAction func entryTapped(_ sender: UIButton) {
@@ -65,6 +67,8 @@ class CreateAccount: UIViewController {
         
         toolBar.setItems([doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
+        
+        UITextField.appearance().inputAccessoryView = toolBar
         
         username?.inputAccessoryView = toolBar
         name?.inputAccessoryView = toolBar

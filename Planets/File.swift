@@ -72,3 +72,7 @@ var kepler296EInfo = ""
 var kepler440BInfo = ""
 var kepler442BInfo = ""
 var kepler10BInfo = ""
+
+func button() {
+    UIButton.appearance().layer.cornerRadius = 20
+}

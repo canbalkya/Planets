@@ -22,7 +22,9 @@ class EditVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        saveButton.layer.cornerRadius = 20
+        
+        button()
+//        saveButton.layer.cornerRadius = 20
     }
     
     @IBAction func saveTapped(_ sender: UIButton) {

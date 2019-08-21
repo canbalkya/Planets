@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-class LogInVC: UIViewController {
+class LoginVC: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
@@ -18,7 +18,9 @@ class LogInVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loginButton.layer.cornerRadius = 20
+        
+        button()
+//        loginButton.layer.cornerRadius = 20
     }
     
     @IBAction func loginTapped(_ sender: UIButton) {
