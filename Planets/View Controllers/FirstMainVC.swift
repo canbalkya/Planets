@@ -136,6 +136,13 @@ class FirstMainVC: UIViewController, UITableViewDataSource, UITableViewDelegate,
         myPlanets.append(kepler10B)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetailsVC" {
+            let informationVC = segue.destination as! InformationVC
+            informationVC.selectedPlanet = self.chosenPlanets
+        }
+    }
+    
     @objc func showLoginController() {
         let loginController = CreateAccount()
         present(loginController, animated: true) {
@@ -208,12 +215,5 @@ class FirstMainVC: UIViewController, UITableViewDataSource, UITableViewDelegate,
         searching = false
         searchController.searchBar.text = ""
         tableView.reloadData()
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toDetailsVC" {
-            let informationVC = segue.destination as! InformationVC
-            informationVC.selectedPlanet = self.chosenPlanets
-        }
     }
 }
